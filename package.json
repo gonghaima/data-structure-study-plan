@@ -8,9 +8,11 @@
   },
   "scripts": {
     "test": "jest",
+    "c": "jest --clearCache",
+    "d": "jest --detectOpenHandles --forceExit ",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:arrays": "jest tests/arrays",
+    "test:arrays": "jest --testPathPatterns=\"(tests/arrays|week1)\"",
     "test:specific": "jest --testNamePattern"
   },
   "keywords": [],
