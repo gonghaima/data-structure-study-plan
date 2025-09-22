@@ -7,6 +7,7 @@ markmap:
 ## Linear Data Structures
 
 ### Arrays
+
 - **Static Arrays**
   - Fixed size allocation
   - O(1) access by index
@@ -21,6 +22,7 @@ markmap:
   - Jagged Arrays
 
 ### Linked Lists
+
 - **Singly Linked List**
   - One direction traversal
   - O(1) insertion/deletion at head
@@ -38,6 +40,7 @@ markmap:
   - O(log n) average operations
 
 ### Stacks
+
 - **Array-based Stack**
   - Fixed or dynamic size
   - LIFO principle
@@ -52,6 +55,7 @@ markmap:
   - Browser history
 
 ### Queues
+
 - **Simple Queue**
   - FIFO principle
   - Array or linked list implementation
@@ -68,6 +72,7 @@ markmap:
 ## Non-Linear Data Structures
 
 ### Trees
+
 - **Binary Trees**
   - Each node has ≤ 2 children
   - Left and right subtrees
@@ -116,6 +121,7 @@ markmap:
     - Amortized O(log n) operations
 
 ### Heaps
+
 - **Binary Heap**
   - Complete binary tree
   - Min-heap or Max-heap property
@@ -133,6 +139,7 @@ markmap:
   - Trade-off between height and branching
 
 ### Graphs
+
 - **Representation**
   - **Adjacency Matrix**
     - 2D array representation
@@ -175,6 +182,7 @@ markmap:
 ## Hash-based Data Structures
 
 ### Hash Tables
+
 - **Hash Maps**
   - Key-value pairs
   - O(1) average operations
@@ -198,6 +206,7 @@ markmap:
   - Frequency counting
 
 ### Bloom Filters
+
 - Probabilistic data structure
 - Space-efficient set membership
 - False positives possible
@@ -207,6 +216,7 @@ markmap:
 ## Advanced Data Structures
 
 ### Disjoint Set Union (Union-Find)
+
 - **Path Compression**
   - Flattens tree structure
   - Optimizes find operations
@@ -219,6 +229,7 @@ markmap:
   - Dynamic connectivity
 
 ### String Data Structures
+
 - **Suffix Arrays**
   - Sorted array of suffixes
   - Space-efficient alternative to suffix trees
@@ -230,6 +241,7 @@ markmap:
   - Linear time complexity
 
 ### Geometric Data Structures
+
 - **KD-Trees**
   - k-dimensional space partitioning
   - Nearest neighbor search
@@ -244,6 +256,7 @@ markmap:
   - Geographic information systems
 
 ### Probabilistic Data Structures
+
 - **Count-Min Sketch**
   - Frequency estimation
   - Streaming data analysis
@@ -257,20 +270,22 @@ markmap:
 ## Time Complexity Summary
 
 ### Common Operations
-| Data Structure | Access | Search | Insertion | Deletion |
-|---|---|---|---|---|
-| Array | O(1) | O(n) | O(n) | O(n) |
-| Linked List | O(n) | O(n) | O(1) | O(1) |
-| Stack | O(n) | O(n) | O(1) | O(1) |
-| Queue | O(n) | O(n) | O(1) | O(1) |
-| Hash Table | N/A | O(1)* | O(1)* | O(1)* |
-| Binary Search Tree | O(log n) | O(log n) | O(log n) | O(log n) |
-| AVL Tree | O(log n) | O(log n) | O(log n) | O(log n) |
-| Binary Heap | N/A | O(n) | O(log n) | O(log n) |
 
-*Average case, O(n) worst case
+| Data Structure     | Access   | Search   | Insertion | Deletion |
+| ------------------ | -------- | -------- | --------- | -------- |
+| Array              | O(1)     | O(n)     | O(n)      | O(n)     |
+| Linked List        | O(n)     | O(n)     | O(1)      | O(1)     |
+| Stack              | O(n)     | O(n)     | O(1)      | O(1)     |
+| Queue              | O(n)     | O(n)     | O(1)      | O(1)     |
+| Hash Table         | N/A      | O(1)\*   | O(1)\*    | O(1)\*   |
+| Binary Search Tree | O(log n) | O(log n) | O(log n)  | O(log n) |
+| AVL Tree           | O(log n) | O(log n) | O(log n)  | O(log n) |
+| Binary Heap        | N/A      | O(n)     | O(log n)  | O(log n) |
+
+\*Average case, O(n) worst case
 
 ## Space Complexity Considerations
+
 - **Arrays**: O(n) - contiguous memory
 - **Linked Lists**: O(n) - extra pointer storage
 - **Trees**: O(n) - pointer overhead
