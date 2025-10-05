@@ -1,4 +1,4 @@
-const strStr = require('./solution1');
+const strStr = require('./solution2');
 const testdata = require('./testdata');
 
 describe('Find the Index of the First Occurrence in a String', () => {
