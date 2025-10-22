@@ -1,4 +1,4 @@
-const shortestPalindrome = require('./solution');
+const shortestPalindrome = require('./solution1');
 const testdata = require('./testdata');
 
 describe('Shortest Palindrome', () => {
