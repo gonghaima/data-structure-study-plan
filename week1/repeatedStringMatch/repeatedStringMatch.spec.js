@@ -1,4 +1,4 @@
-const repeatedStringMatch = require('./solution');
+const repeatedStringMatch = require('./solution2');
 const testdata = require('./testdata');
 
 describe('Repeated String Match', () => {
