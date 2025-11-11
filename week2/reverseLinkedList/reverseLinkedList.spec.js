@@ -1,15 +1,17 @@
 const reverseList = require('./solution');
+const reverseList1 = require('./solution1');
+const reverseList2 = require('./solution2');
 const { testData, linkedListToArray } = require('./testData');
 
 /**
  * Helper function to run test cases from data
  */
-function runTestCases(testCases) {
+function runTestCases(testCases, solutionFn, solutionName) {
     testCases.forEach(testCase => {
         const { description, input, expected } = testCase;
         
-        test(`should ${description}`, () => {
-            const result = reverseList(input);
+        test(`${solutionName}: should ${description}`, () => {
+            const result = solutionFn(input);
             const resultArray = linkedListToArray(result);
             expect(resultArray).toEqual(expected);
         });
@@ -17,19 +19,29 @@ function runTestCases(testCases) {
 }
 
 describe('Reverse Linked List - LeetCode #206', () => {
-    describe('Basic functionality', () => {
-        runTestCases(testData.basicFunctionality);
-    });
+    const solutions = [
+        { fn: reverseList, name: 'Iterative' },
+        { fn: reverseList1, name: 'Recursive' },
+        { fn: reverseList2, name: 'Stack-based' }
+    ];
 
-    describe('Edge cases', () => {
-        runTestCases(testData.edgeCases);
-    });
+    solutions.forEach(({ fn, name }) => {
+        describe(`${name} Solution`, () => {
+            describe('Basic functionality', () => {
+                runTestCases(testData.basicFunctionality, fn, name);
+            });
 
-    describe('Performance tests', () => {
-        runTestCases(testData.performanceTests);
-    });
+            describe('Edge cases', () => {
+                runTestCases(testData.edgeCases, fn, name);
+            });
 
-    describe('Special cases', () => {
-        runTestCases(testData.specialCases);
+            describe('Performance tests', () => {
+                runTestCases(testData.performanceTests, fn, name);
+            });
+
+            describe('Special cases', () => {
+                runTestCases(testData.specialCases, fn, name);
+            });
+        });
     });
 });

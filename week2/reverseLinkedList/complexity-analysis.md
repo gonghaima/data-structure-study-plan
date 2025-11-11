@@ -15,8 +15,8 @@ This document analyzes the time and space complexity of different solutions for 
 
 ---
 
-## Solution: Recursive Approach
-**Alternative implementation**
+## Solution 1: Recursive Approach
+**File:** solution1.js
 
 - **Time Complexity:** O(n)
   - Visits each node exactly once during the recursive calls.
@@ -27,13 +27,27 @@ This document analyzes the time and space complexity of different solutions for 
 
 ---
 
+## Solution 2: Stack-based Approach
+**File:** solution2.js
+
+- **Time Complexity:** O(n)
+  - First pass to push all nodes onto stack: O(n)
+  - Second pass to pop and reconnect nodes: O(n)
+- **Space Complexity:** O(n)
+  - Uses explicit stack to store all node references.
+  - Stack size grows linearly with input size.
+
+---
+
 ## Summary Table
 
 | Solution                | Time Complexity | Space Complexity | Notes                                 |
 |-------------------------|----------------|------------------|---------------------------------------|
 | Iterative               | O(n)           | O(1)             | Optimal space usage, preferred        |
 | Recursive               | O(n)           | O(n)             | Elegant but uses call stack space     |
+| Stack-based             | O(n)           | O(n)             | Educational, demonstrates stack usage |
 
 **Recommendation:**
 - Use the iterative approach for optimal space complexity O(1).
-- Recursive approach is more intuitive but uses O(n) extra space on the call stack.
+- Recursive approach is more intuitive but uses O(n) extra space.
+- Stack-based approach is mainly educational to understand the reversal concept.
