@@ -1,5 +1,5 @@
 Follow /Users/stevengong/study/data-structure-study-plan/week1/ThreeSum/question.md, and /Users/stevengong/study/data-structure-study-plan/week1/SETUP_TEMPLATE.md,
 
-Create test data, empty solution.js, and spec files in the folder /Users/stevengong/study/data-structure-study-plan/week2/mergeTwoSortedLists/question.md
+Create test data, empty solution.js, and spec files in the folder /Users/stevengong/study/data-structure-study-plan/week2/linkedListCycle/question.md
 
 create a complexity-analysis.md, refer to similar format /Users/stevengong/study/data-structure-study-plan/week1/Shortest_Palindrome/complexity-analysis.md
