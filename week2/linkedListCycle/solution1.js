@@ -1,14 +1,6 @@
 /**
- * Definition for singly-linked list.
- * function ListNode(val) {
- *     this.val = val;
- *     this.next = null;
- * }
- */
-
-/**
- * @param {ListNode} head
- * @return {boolean}
+ * Floyd's Cycle Detection Algorithm (Two Pointers)
+ * Time: O(n), Space: O(1)
  */
 var hasCycle = function(head) {
     if (!head || !head.next) return false;
