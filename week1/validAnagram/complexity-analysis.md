@@ -5,6 +5,7 @@ This document analyzes the time and space complexity of three common solutions f
 ---
 
 ## Solution: Hash Map (Map Counter)
+
 **File:** solution.js
 
 - **Time Complexity:** O(n)
@@ -15,6 +16,7 @@ This document analyzes the time and space complexity of three common solutions f
 ---
 
 ## Solution 1: Sorting
+
 **File:** solution.1.js
 
 - **Time Complexity:** O(n log n)
@@ -25,6 +27,7 @@ This document analyzes the time and space complexity of three common solutions f
 ---
 
 ## Solution 2: Array Counter (Lowercase Letters)
+
 **File:** solution.2.js
 
 - **Time Complexity:** O(n)
@@ -36,13 +39,14 @@ This document analyzes the time and space complexity of three common solutions f
 
 ## Summary Table
 
-| Solution         | Time Complexity | Space Complexity | Notes                                 |
-|------------------|----------------|------------------|---------------------------------------|
-| Hash Map         | O(n)           | O(k) or O(1)     | General, supports Unicode if adapted  |
-| Sorting          | O(n log n)     | O(n)             | Simple, but slower for large n        |
-| Array Counter    | O(n)           | O(1)             | Fastest for lowercase English letters |
+| Solution      | Time Complexity | Space Complexity | Notes                                 |
+| ------------- | --------------- | ---------------- | ------------------------------------- |
+| Hash Map      | O(n)            | O(k) or O(1)     | General, supports Unicode if adapted  |
+| Sorting       | O(n log n)      | O(n)             | Simple, but slower for large n        |
+| Array Counter | O(n)            | O(1)             | Fastest for lowercase English letters |
 
 **Recommendation:**
+
 - Use the array counter for lowercase English letters for best performance.
 - Use the hash map approach for Unicode or general cases.
 - Sorting is simple but less efficient for large strings.

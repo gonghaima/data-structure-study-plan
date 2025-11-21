@@ -5,6 +5,7 @@ This document analyzes the time and space complexity of three solutions for the 
 ---
 
 ## Solution: Prefix & Suffix Product (Optimal, No Division)
+
 **File:** solution.js
 
 - **Time Complexity:** O(n)
@@ -15,6 +16,7 @@ This document analyzes the time and space complexity of three solutions for the 
 ---
 
 ## Solution 1: Division-Based (For Learning Only)
+
 **File:** solution.1.js
 
 - **Time Complexity:** O(n)
@@ -26,6 +28,7 @@ This document analyzes the time and space complexity of three solutions for the 
 ---
 
 ## Solution 2: Brute-Force
+
 **File:** solution.2.js
 
 - **Time Complexity:** O(n²)
@@ -39,11 +42,12 @@ This document analyzes the time and space complexity of three solutions for the 
 ## Summary Table
 
 | Solution                | Time Complexity | Space Complexity | Notes                                 |
-|-------------------------|----------------|------------------|---------------------------------------|
-| Prefix & Suffix Product | O(n)           | O(1) extra       | Best, no division, handles zeros      |
-| Division-Based          | O(n)           | O(1) extra       | Not allowed, fails for multiple zeros |
-| Brute-Force             | O(n²)          | O(1) extra       | Not efficient, for learning only      |
+| ----------------------- | --------------- | ---------------- | ------------------------------------- |
+| Prefix & Suffix Product | O(n)            | O(1) extra       | Best, no division, handles zeros      |
+| Division-Based          | O(n)            | O(1) extra       | Not allowed, fails for multiple zeros |
+| Brute-Force             | O(n²)           | O(1) extra       | Not efficient, for learning only      |
 
 **Recommendation:**
+
 - Use the prefix & suffix product approach for interviews and production code.
 - Division-based and brute-force are for learning and should not be used in practice.

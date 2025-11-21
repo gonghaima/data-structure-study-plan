@@ -11,7 +11,7 @@ var isAnagram = function (s, t) {
     count[s.charCodeAt(i) - 97]++;
     count[t.charCodeAt(i) - 97]--;
   }
-  return count.every(x => x === 0);
+  return count.every((x) => x === 0);
 };
 
 module.exports = isAnagram;

@@ -3,7 +3,7 @@
  * @param {string} s
  * @return {boolean}
  */
-var repeatedSubstringPattern = function(s) {
+var repeatedSubstringPattern = function (s) {
   const n = s.length;
   const lps = new Array(n).fill(0);
   let len = 0;

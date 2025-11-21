@@ -5,7 +5,7 @@
  * @return {number}
  */
 var strStr = function (haystack, needle) {
-  if (needle === "") return 0;
+  if (needle === '') return 0;
   // Build the prefix table (lps array)
   const lps = new Array(needle.length).fill(0);
   let len = 0;
@@ -19,7 +19,8 @@ var strStr = function (haystack, needle) {
     }
   }
   // Search using the lps table
-  let i = 0, j = 0;
+  let i = 0,
+    j = 0;
   while (i < haystack.length) {
     if (haystack[i] === needle[j]) {
       i++;

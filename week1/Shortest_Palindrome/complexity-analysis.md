@@ -5,6 +5,7 @@ This document analyzes the time and space complexity of two solutions for the Sh
 ---
 
 ## Solution: Brute-force Reverse Matching
+
 **File:** solution.js
 
 - **Time Complexity:** O(n^2)
@@ -16,6 +17,7 @@ This document analyzes the time and space complexity of two solutions for the Sh
 ---
 
 ## Solution 1: KMP-based Approach
+
 **File:** solution1.js
 
 - **Time Complexity:** O(n)
@@ -28,11 +30,12 @@ This document analyzes the time and space complexity of two solutions for the Sh
 
 ## Summary Table
 
-| Solution                | Time Complexity | Space Complexity | Notes                                 |
-|-------------------------|----------------|------------------|---------------------------------------|
-| Brute-force             | O(n^2)         | O(n)             | Simple, but slow for long strings     |
-| KMP-based               | O(n)           | O(n)             | Optimal, efficient for large inputs   |
+| Solution    | Time Complexity | Space Complexity | Notes                               |
+| ----------- | --------------- | ---------------- | ----------------------------------- |
+| Brute-force | O(n^2)          | O(n)             | Simple, but slow for long strings   |
+| KMP-based   | O(n)            | O(n)             | Optimal, efficient for large inputs |
 
 **Recommendation:**
+
 - Use the KMP-based approach for best performance, especially for long strings.
 - Brute-force is simple and easy to implement, but not efficient for large inputs.

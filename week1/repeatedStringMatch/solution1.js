@@ -4,7 +4,7 @@
  * @param {string} b
  * @return {number}
  */
-var repeatedStringMatch = function(a, b) {
+var repeatedStringMatch = function (a, b) {
   // Handle edge cases: empty b or a
   if (b === '') return 1; // Empty b is always a substring
   if (a === '') return -1; // Can't form b from empty a
@@ -19,11 +19,14 @@ var repeatedStringMatch = function(a, b) {
   }
 
   // i: index in a, j: index in b, count: number of a repeats
-  let i = 0, j = 0, count = 1;
+  let i = 0,
+    j = 0,
+    count = 1;
   while (i < a.length) {
     if (a[i] === b[j]) {
       // Characters match, move both pointers
-      i++; j++;
+      i++;
+      j++;
       // If we've matched all of b, return the repeat count
       if (j === b.length) return count;
     } else if (j > 0) {
