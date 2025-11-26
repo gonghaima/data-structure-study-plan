@@ -1,76 +1,159 @@
-# Stacks and Queues: Study Guide & Practice
+# Stacks and Queues Problems - Week 3
 
-## Concepts to Master
+## 🎯 Third Week - Stacks and Queues Problems
 
-- Implementation using arrays and linked lists
-- Applications: parentheses matching, expression evaluation
-- Monotonic stack/queue problems
-- Deque (double-ended queue)
+### Problem 1: Valid Parentheses ⭐ (Easy - Perfect Starting Point)
 
-## Key Topics
+**LeetCode #20**
 
-- LIFO vs FIFO principles
-- Stack overflow and underflow
-- Queue implementation with two stacks
+- **Why start here:** Fundamental stack operations and bracket matching
+- **Key concepts:** LIFO principle, stack push/pop, character mapping
+- **Time to solve:** 20-30 minutes
+- **Expected complexity:** O(n) time, O(n) space
+
+### Problem 2: Min Stack ⭐⭐ (Easy-Medium)
+
+**LeetCode #155**
+
+- **Why next:** Advanced stack design with auxiliary data structures
+- **Key concepts:** Stack design, minimum tracking, space-time tradeoffs
+- **Time to solve:** 30-40 minutes
+- **Expected complexity:** O(1) for all operations
+
+### Problem 3: Evaluate Reverse Polish Notation ⭐⭐ (Medium)
+
+**LeetCode #150**
+
+- **Why important:** Stack-based expression evaluation
+- **Key concepts:** Postfix notation, operator precedence, stack evaluation
+- **Time to solve:** 25-35 minutes
+- **Expected complexity:** O(n) time, O(n) space
+
+### Problem 4: Daily Temperatures ⭐⭐⭐ (Medium)
+
+**LeetCode #739**
+
+- **Why crucial:** Monotonic stack pattern for next greater element
+- **Key concepts:** Monotonic stack, index tracking, temperature comparison
+- **Time to solve:** 35-45 minutes
+- **Expected complexity:** O(n) time, O(n) space
+
+### Problem 5: Sliding Window Maximum ⭐⭐⭐ (Hard)
+
+**LeetCode #239**
+
+- **Why essential:** Deque-based sliding window optimization
+- **Key concepts:** Deque operations, sliding window, maximum tracking
+- **Time to solve:** 45-60 minutes
+- **Expected complexity:** O(n) time, O(k) space
+
+---
+
+## 🧠 Core Concepts to Master
+
+### LIFO vs FIFO Principles
+- Stack: Last In, First Out
+- Queue: First In, First Out
+- When to use each data structure
+
+### Stack Implementation and Operations
+- Array-based vs linked list implementation
+- Push, pop, peek operations
+- Stack overflow and underflow handling
+
+### Queue Implementation Variations
 - Circular queue design
+- Queue using two stacks
+- Deque (double-ended queue) operations
 
-## Practice Goals
-
-- Solve 10-12 problems covering all key concepts and applications
-
-## Recommended LeetCode Problems
-
-| Problem                          | LeetCode #                                                             | Difficulty |
-| -------------------------------- | ---------------------------------------------------------------------- | ---------- |
-| Valid Parentheses                | [20](https://leetcode.com/problems/valid-parentheses/)                 | Easy       |
-| Min Stack                        | [155](https://leetcode.com/problems/min-stack/)                        | Medium     |
-| Evaluate Reverse Polish Notation | [150](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | Medium     |
-| Sliding Window Maximum           | [239](https://leetcode.com/problems/sliding-window-maximum/)           | Hard       |
-| Daily Temperatures               | [739](https://leetcode.com/problems/daily-temperatures/)               | Medium     |
-| Implement Stack using Queues     | [225](https://leetcode.com/problems/implement-stack-using-queues/)     | Easy       |
-| Implement Queue using Stacks     | [232](https://leetcode.com/problems/implement-queue-using-stacks/)     | Easy       |
-| Design Circular Queue            | [622](https://leetcode.com/problems/design-circular-queue/)            | Medium     |
-| Next Greater Element I           | [496](https://leetcode.com/problems/next-greater-element-i/)           | Easy       |
-| Next Greater Element II          | [503](https://leetcode.com/problems/next-greater-element-ii/)          | Medium     |
-| Remove Duplicate Letters         | [316](https://leetcode.com/problems/remove-duplicate-letters/)         | Medium     |
-| Design Deque                     | [641](https://leetcode.com/problems/design-circular-deque/)            | Medium     |
+### Monotonic Stack/Queue Patterns
+- Next greater/smaller element problems
+- Sliding window maximum/minimum
+- Histogram-based problems
 
 ---
 
-## Related Questions
+## 📋 Study Approach for Each Problem
 
-### 1. Stack Implementation
+### Step 1: Understand the Pattern (10-15 minutes)
+- Identify if it's a stack or queue problem
+- Recognize common patterns (bracket matching, monotonic stack, etc.)
+- Consider edge cases and constraints
 
-- Implement a stack using arrays.
-- Implement a stack using a singly linked list.
-- What are the time complexities for push, pop, and top operations?
+### Step 2: Choose Data Structure (5-10 minutes)
+- Stack for LIFO operations
+- Queue for FIFO operations
+- Deque for both ends access
 
-### 2. Queue Implementation
+### Step 3: Implement (25-35 minutes)
+- Handle empty structure cases
+- Implement core logic step by step
+- Test with examples
 
-- Implement a queue using two stacks.
-- Implement a circular queue.
-- What are the advantages of a circular queue over a regular queue?
-
-### 3. Applications
-
-- How would you use a stack to check for balanced parentheses in an expression?
-- Describe how to evaluate a postfix (Reverse Polish Notation) expression using a stack.
-- What is a monotonic stack? Give an example problem that uses it.
-
-### 4. Advanced Topics
-
-- Implement a deque (double-ended queue) and explain its use cases.
-- How can you use a queue to solve the Sliding Window Maximum problem?
-- What is stack overflow and underflow? How can you prevent them in your implementation?
+### Step 4: Optimize & Review (10-15 minutes)
+- Check space complexity
+- Consider alternative approaches
+- Verify edge case handling
 
 ---
 
-## Additional Practice
+## 🎯 This Week's Goal
 
-- Design a data structure that supports push, pop, top, and retrieving the minimum element in constant time.
-- Given a list of daily temperatures, return a list such that, for each day, tells you how many days you would have to wait until a warmer temperature.
-- Given an array of integers, find the maximum value in each sliding window of size k.
+Complete these 5 problems over 4-5 days, spending about 1-1.5 hours per problem. This will give you mastery of:
+
+- Stack and queue operations
+- Bracket matching algorithms
+- Monotonic stack patterns
+- Sliding window with deque
 
 ---
 
-**Tip:** Focus on implementing these data structures from scratch and understanding their real-world applications. Practice explaining your solutions and reasoning about time and space complexity.
+## 📝 Related Problems to Practice
+
+### Stack Problems:
+- **Baseball Game** (LeetCode #682)
+- **Next Greater Element I** (LeetCode #496)
+- **Valid Parentheses** (LeetCode #20)
+- **Remove All Adjacent Duplicates** (LeetCode #1047)
+
+### Queue Problems:
+- **Implement Queue using Stacks** (LeetCode #232)
+- **Implement Stack using Queues** (LeetCode #225)
+- **Design Circular Queue** (LeetCode #622)
+
+### Advanced Stack/Queue:
+- **Largest Rectangle in Histogram** (LeetCode #84)
+- **Trapping Rain Water** (LeetCode #42)
+- **Maximal Rectangle** (LeetCode #85)
+
+---
+
+## 🚀 Key Applications
+
+### Stacks:
+- Function call management
+- Expression evaluation
+- Undo operations
+- Browser history
+- Parentheses matching
+
+### Queues:
+- Task scheduling
+- Breadth-first search
+- Print queue management
+- Buffer for data streams
+
+### Deque:
+- Sliding window problems
+- Palindrome checking
+- Both ends processing
+
+---
+
+## 💡 Problem-Solving Tips
+
+1. **For bracket matching:** Use stack with character mapping
+2. **For next greater element:** Use monotonic decreasing stack
+3. **For sliding window maximum:** Use deque to maintain candidates
+4. **For expression evaluation:** Use stack for operands and operators
+5. **For design problems:** Consider auxiliary data structures for optimization
