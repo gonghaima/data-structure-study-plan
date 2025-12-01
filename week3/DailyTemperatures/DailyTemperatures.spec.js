@@ -1,4 +1,4 @@
-const dailyTemperatures = require('./solution');
+const dailyTemperatures = require('./solution2');
 const testdata = require('./testdata');
 
 describe('Daily Temperatures', () => {
