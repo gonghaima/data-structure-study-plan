@@ -1,4 +1,4 @@
-const maxSlidingWindow = require('./solution');
+const maxSlidingWindow = require('./solution2');
 const testdata = require('./testdata');
 
 describe('Sliding Window Maximum', () => {
