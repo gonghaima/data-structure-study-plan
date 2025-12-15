@@ -1,5 +1,5 @@
 Follow /Users/stevengong/study/data-structure-study-plan/week1/ThreeSum/question.md, and /Users/stevengong/study/data-structure-study-plan/week1/SETUP_TEMPLATE.md,
-Create test data, and spec files, also an empty solution.js in the folder /Users/stevengong/study/data-structure-study-plan/week3/LargestRectangleInHistogram/question.md
+Create test data, and spec files, also an empty solution.js in the folder /Users/stevengong/study/data-structure-study-plan/week3/NextGreaterElementI/question.md
 
 give me a few common solutions, in solution.js, solution1.js, etc
 
