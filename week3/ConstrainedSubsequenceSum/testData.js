@@ -44,7 +44,7 @@ const testData = {
         {
             description: 'Large array with mixed values',
             input: { nums: Array.from({length: 1000}, (_, i) => i % 2 === 0 ? i : -i), k: 10 },
-            expected: 499500
+            expected: 249500
         }
     ],
 
@@ -57,7 +57,7 @@ const testData = {
         {
             description: 'k = 1 forces consecutive selection',
             input: { nums: [5, -3, 8, -1, 4], k: 1 },
-            expected: 8
+            expected: 13
         }
     ]
 };
