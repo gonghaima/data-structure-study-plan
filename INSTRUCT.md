@@ -33,3 +33,30 @@ create one *.md file in week3 folder for the following, also include some relate
 - Evaluate Reverse Polish Notation
 - Sliding Window Maximum
 - Daily Temperatures
+
+
+follow /Users/stevengong/study/data-structure-study-plan/week2/linked-lists-problems.md,
+update /Users/stevengong/study/data-structure-study-plan/week4/hash-table-map.md including related questions
+
+### Hash Tables/Hash Maps
+**Concepts to Master:**
+- Hash function design and collision handling
+- Load factor and rehashing
+- Applications in counting, grouping, and lookup
+- Two-sum variations and frequency problems
+
+**Key Topics:**
+- Open addressing vs chaining
+- Hash function properties
+- Time complexity analysis
+- Space-time tradeoffs
+
+**Practice Goals:** 12-15 problems
+**Recommended Problems:**
+- Two Sum
+- Group Anagrams
+- Top K Frequent Elements
+- Longest Consecutive Sequence
+- Design HashMap
+
+---
