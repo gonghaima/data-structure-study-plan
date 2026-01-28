@@ -37,7 +37,8 @@ class MaxHeap {
     let i = 0;
     while (2 * i + 1 < this.heap.length) {
       let j = 2 * i + 1;
-      if (j + 1 < this.heap.length && this.heap[j + 1][0] > this.heap[j][0]) j++;
+      if (j + 1 < this.heap.length && this.heap[j + 1][0] > this.heap[j][0])
+        j++;
       if (this.heap[i][0] >= this.heap[j][0]) break;
       [this.heap[i], this.heap[j]] = [this.heap[j], this.heap[i]];
       i = j;
