@@ -1,5 +1,5 @@
 const { testCases } = require('./testdata');
-const topKFrequent = require('./solution');
+const topKFrequent = require('./solution2');
 
 describe('Top K Frequent Elements', () => {
   testCases.forEach(({ input, output }, idx) => {
