@@ -5,5 +5,5 @@ module.exports = function topKFrequent(nums, k) {
   return Array.from(freq.entries())
     .sort((a, b) => b[1] - a[1])
     .slice(0, k)
-    .map(x => x[0]);
+    .map((x) => x[0]);
 };

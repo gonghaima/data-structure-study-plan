@@ -42,11 +42,11 @@ This document analyzes the time and space complexity of three common solutions f
 
 ## Summary Table
 
-| Solution         | Time Complexity | Space Complexity | Notes                                 |
-|-----------------|-----------------|------------------|---------------------------------------|
-| Bucket Sort      | O(n)            | O(n)             | Fastest, but needs extra bucket space |
-| Min Heap         | O(n log k)      | O(n)             | Efficient for small k                 |
-| HashMap + Sort   | O(n log n)      | O(n)             | Simple, but slower for large n        |
+| Solution       | Time Complexity | Space Complexity | Notes                                 |
+| -------------- | --------------- | ---------------- | ------------------------------------- |
+| Bucket Sort    | O(n)            | O(n)             | Fastest, but needs extra bucket space |
+| Min Heap       | O(n log k)      | O(n)             | Efficient for small k                 |
+| HashMap + Sort | O(n log n)      | O(n)             | Simple, but slower for large n        |
 
 **Recommendation:**
 
