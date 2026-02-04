@@ -1,4 +1,4 @@
-const longestConsecutive = require('./solution');
+const longestConsecutive = require('./solution2');
 const testCases = require('./testdata');
 
 describe('Longest Consecutive Sequence', () => {
