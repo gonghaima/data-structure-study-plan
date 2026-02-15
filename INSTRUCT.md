@@ -11,6 +11,8 @@ create a complexity-analysis.md in the folder /Users/stevengong/study/data-struc
 follow /Users/stevengong/study/data-structure-study-plan/week2/linked-lists-problems.md,
 create one *.md file in week3 folder for the following, also include some related questions.
 
+follow the pattern /Users/stevengong/study/data-structure-study-plan/week2/linked-lists-problems.md,
+update one /Users/stevengong/study/data-structure-study-plan/week5/binary-trees.md file in week3 folder for the following, also add related questions, common questions from leetcode, etc.
 
 
 ### Stacks and Queues
