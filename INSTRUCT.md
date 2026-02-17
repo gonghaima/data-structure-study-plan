@@ -1,5 +1,5 @@
 Follow pattern /Users/stevengong/study/data-structure-study-plan/week3/ConstrainedSubsequenceSum, and /Users/stevengong/study/data-structure-study-plan/week1/SETUP_TEMPLATE.md,
-Create test data, and spec files, also an empty solution.js in the folder /Users/stevengong/study/data-structure-study-plan/week4/DesignHashMap/question.md
+Create test data, and spec files, also an empty solution.js in the folder /Users/stevengong/study/data-structure-study-plan/week5/BinaryTreeInorderTraversal/question.md
 
 give me a few common solutions, in solution.js, solution1.js, etc
 
