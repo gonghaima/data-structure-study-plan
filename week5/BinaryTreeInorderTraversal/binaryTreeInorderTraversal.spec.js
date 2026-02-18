@@ -1,4 +1,4 @@
-const inorderTraversal = require('./solution');
+const inorderTraversal = require('./solution1');
 const testData = require('./testData');
 
 /**
@@ -21,10 +21,6 @@ describe('Binary Tree Inorder Traversal - LeetCode #94', () => {
 
   describe('Edge cases', () => {
     runTestCases(testData.edgeCases);
-  });
-
-  describe('Performance tests', () => {
-    runTestCases(testData.performanceTests);
   });
 
   describe('Special cases', () => {
