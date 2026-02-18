@@ -4,7 +4,7 @@ Create test data, and spec files, also an empty solution.js in the folder /Users
 give me a few common solutions, in solution.js, solution1.js, etc
 
 
-create a complexity-analysis.md in the folder /Users/stevengong/study/data-structure-study-plan/week4/DesignHashMap, refer to similar format /Users/stevengong/study/data-structure-study-plan/week1/Shortest_Palindrome/complexity-analysis.md
+create a complexity-analysis.md in the folder /Users/stevengong/study/data-structure-study-plan/week5/BinaryTreeInorderTraversal/question.md, refer to similar format /Users/stevengong/study/data-structure-study-plan/week1/Shortest_Palindrome/complexity-analysis.md
 
 
 
