@@ -1,6 +1,6 @@
 // Approach 4: Iterative with Explicit Stack Operations
 // Time: O(n), Space: O(n)
-function inorderTraversal(root) {
+var inorderTraversal = function(root) {
     if (!root) return [];
     
     const result = [];
@@ -21,6 +21,6 @@ function inorderTraversal(root) {
     }
     
     return result;
-}
+};
 
 module.exports = inorderTraversal;

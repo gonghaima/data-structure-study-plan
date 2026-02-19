@@ -1,6 +1,6 @@
 // Approach 1: Recursive DFS
 // Time: O(n), Space: O(n)
-function inorderTraversal(root) {
+var inorderTraversal = function(root) {
     const result = [];
     
     function dfs(node) {
@@ -12,6 +12,6 @@ function inorderTraversal(root) {
     
     dfs(root);
     return result;
-}
+};
 
 module.exports = inorderTraversal;

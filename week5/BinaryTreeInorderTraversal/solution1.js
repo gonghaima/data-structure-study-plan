@@ -1,6 +1,6 @@
 // Approach 2: Iterative using Stack
 // Time: O(n), Space: O(n)
-function inorderTraversal(root) {
+var inorderTraversal = function(root) {
     const result = [];
     const stack = [];
     let current = root;
@@ -16,6 +16,6 @@ function inorderTraversal(root) {
     }
     
     return result;
-}
+};
 
 module.exports = inorderTraversal;

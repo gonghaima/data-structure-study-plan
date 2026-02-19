@@ -1,6 +1,6 @@
 // Approach 3: Morris Traversal
 // Time: O(n), Space: O(1)
-function inorderTraversal(root) {
+var inorderTraversal = function(root) {
     const result = [];
     let current = root;
     
@@ -26,6 +26,6 @@ function inorderTraversal(root) {
     }
     
     return result;
-}
+};
 
 module.exports = inorderTraversal;
