@@ -1,10 +1,10 @@
 Follow pattern /Users/stevengong/study/data-structure-study-plan/week3/ConstrainedSubsequenceSum, and /Users/stevengong/study/data-structure-study-plan/week1/SETUP_TEMPLATE.md,
-Create test data, and spec files, also an empty solution.js in the folder /Users/stevengong/study/data-structure-study-plan/week5/BinaryTreeInorderTraversal/question.md
+Create test data, and spec files, also an empty solution.js in the folder /Users/stevengong/study/data-structure-study-plan/week5/MaximumDepthOfBinaryTree/question.md
 
 give me a few common solutions, in solution.js, solution1.js, etc
 
 
-create a complexity-analysis.md in the folder /Users/stevengong/study/data-structure-study-plan/week5/BinaryTreeInorderTraversal/question.md, refer to similar format /Users/stevengong/study/data-structure-study-plan/week1/Shortest_Palindrome/complexity-analysis.md
+create a complexity-analysis.md in the folder /Users/stevengong/study/data-structure-study-plan/week5/MaximumDepthOfBinaryTree, refer to similar format /Users/stevengong/study/data-structure-study-plan/week1/Shortest_Palindrome/complexity-analysis.md
 
 
 
