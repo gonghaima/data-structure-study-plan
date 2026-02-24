@@ -130,11 +130,43 @@ Once comfortable with the basics, tackle:
 - **Minimum Window Substring** (LeetCode #76)
 - **Copy List with Random Pointer** (LeetCode #138)
 - **Word Pattern** (LeetCode #290)
+- **LRU Cache** (LeetCode #146)
+- **Insert Delete GetRandom O(1)** (LeetCode #380)
+- **Design Twitter** (LeetCode #355)
 
 **Set Operations:**
 - **Intersection of Two Arrays** (LeetCode #349)
+- **Intersection of Two Arrays II** (LeetCode #350)
 - **Happy Number** (LeetCode #202)
 - **Find Duplicate Subtrees** (LeetCode #652)
+- **Unique Number of Occurrences** (LeetCode #1207)
+- **Single Number** (LeetCode #136)
+
+**Substring & Window Problems:**
+- **Longest Substring Without Repeating Characters** (LeetCode #3)
+- **Substring with Concatenation of All Words** (LeetCode #30)
+- **Find All Anagrams in a String** (LeetCode #438)
+- **Permutation in String** (LeetCode #567)
+
+**Array & Sum Problems:**
+- **Two Sum II - Input array is sorted** (LeetCode #167)
+- **3Sum** (LeetCode #15)
+- **4Sum** (LeetCode #18)
+- **Continuous Subarray Sum** (LeetCode #523)
+- **Subarray Sum Equals K** (LeetCode #560)
+- **Maximum Size Subarray Sum Equals k** (LeetCode #325)
+
+**Design Problems:**
+- **Design HashSet** (LeetCode #705)
+- **Design HashMap** (LeetCode #706)
+- **All O`one Data Structure** (LeetCode #432)
+- **Time Based Key-Value Store** (LeetCode #981)
+
+**Graph & Tree with Hash:**
+- **Clone Graph** (LeetCode #133)
+- **Course Schedule** (LeetCode #207)
+- **Alien Dictionary** (LeetCode #269)
+- **Word Ladder** (LeetCode #127)
 
 ---
 
