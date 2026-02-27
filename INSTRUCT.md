@@ -1,5 +1,5 @@
 Follow pattern /Users/stevengong/study/data-structure-study-plan/week3/ConstrainedSubsequenceSum, and /Users/stevengong/study/data-structure-study-plan/week1/SETUP_TEMPLATE.md,
-Create test data, and spec files, and one empty solution.js in the folder /Users/stevengong/study/data-structure-study-plan/week5/PathSum/question.md
+Create test data, and spec files, and one empty solution.js in the folder /Users/stevengong/study/data-structure-study-plan/week5/LowestCommonAncestorofaBinaryTree/question.md
 
 give me a few common solutions, in solution.js, solution1.js, etc
 
