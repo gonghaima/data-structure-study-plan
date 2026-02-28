@@ -1,0 +1,45 @@
+Problem Statement
+A logistics company is delivering a set of cargo loads. Each load has a specific weight (in tons). Each truck can carry either one or two loads at once, but the total load cannot exceed 10 tons.
+
+In this task, you will need to identify the minimum number of trucks that are required to transport all the loads, by working out when to pair two loads onto a single truck, and when trucks can only carry a single load.
+
+You will be given a list of load-weights, for example [1, 5, 5, 8, 9]. You need to calculate and return the minimum number of required trucks. In this question, the answer is 3 trucks, as you can load the trucks as follows:
+
+Load the two 5-loads into the first truck
+Load the 1-load and the 8-load into the second truck
+Load the 9-load into a truck on its own
+The array of load-weights will be provided to you in sorted order. No load will weigh more than 10 tons.
+
+Function Signature
+ 
+def min_trucks(weights: list[int]) -> int:
+Input Format
+weights: a sorted list of integers, each representing the weight (in tons) of a cargo load (1 ≤ weight ≤ 10).
+Output Format
+Return an integer: the minimum number of trucks required.
+Constraints
+1 ≤ number of loads ≤ 1000
+1 ≤ weight ≤ 10
+Example 1
+Input
+ 
+[4, 5, 5, 5]
+Output
+ 
+2
+Calculation
+Pair 5 and 5 → 10 tons (1 truck)
+Pair 5 and 4 → 9 tons (1 truck)
+Total = 2 trucks
+Example 2
+Input
+ 
+[3, 4, 5, 6, 7]
+Output
+ 
+3
+Explanation 2
+Pair 3 and 5 → 8 tons (1 truck)
+Pair 4 and 6 → 10 tons (1 truck)
+7 → its own truck
+Total = 3 trucks
