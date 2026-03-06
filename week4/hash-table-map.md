@@ -51,11 +51,17 @@
 
 ## 🧠 Core Concepts to Master
 
-### Hash Function Design
-- Uniform distribution properties
-- Collision minimization
-- Load factor management
-- Rehashing strategies
+### Hash Function Design and Collision Handling
+- Hash function design and collision handling
+- Load factor and rehashing
+- Applications in counting, grouping, and lookup
+- Two-sum variations and frequency problems
+
+### Key Topics
+- Open addressing vs chaining
+- Hash function properties
+- Time complexity analysis
+- Space-time tradeoffs
 
 ### Collision Handling
 - Chaining with linked lists

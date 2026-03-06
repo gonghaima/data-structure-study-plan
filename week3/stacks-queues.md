@@ -7,7 +7,7 @@
 **LeetCode #20**
 
 - **Why start here:** Fundamental stack operations and LIFO principle
-- **Key concepts:** Stack push/pop, character matching, balanced expressions
+- **Key concepts:** Stack push/pop, character matching, balanced parentheses
 - **Time to solve:** 20-30 minutes
 - **Expected complexity:** O(n) time, O(n) space
 
@@ -24,28 +24,28 @@
 
 **LeetCode #150**
 
-- **Why important:** Stack-based expression evaluation and operator handling
-- **Key concepts:** Postfix notation, operand stacking, operator processing
+- **Why important:** Classic stack application for expression evaluation
+- **Key concepts:** Postfix notation, operator precedence, stack-based calculation
 - **Time to solve:** 25-35 minutes
 - **Expected complexity:** O(n) time, O(n) space
 
-### Problem 4: Daily Temperatures ⭐⭐ (Medium)
-
-**LeetCode #739**
-
-- **Why crucial:** Monotonic stack pattern and next greater element concept
-- **Key concepts:** Monotonic decreasing stack, index tracking, result array
-- **Time to solve:** 35-45 minutes
-- **Expected complexity:** O(n) time, O(n) space
-
-### Problem 5: Sliding Window Maximum ⭐⭐⭐ (Hard)
+### Problem 4: Sliding Window Maximum ⭐⭐⭐ (Hard)
 
 **LeetCode #239**
 
-- **Why essential:** Deque usage and sliding window optimization
-- **Key concepts:** Monotonic deque, window maintenance, maximum tracking
+- **Why crucial:** Advanced deque usage and monotonic queue concept
+- **Key concepts:** Deque operations, sliding window, monotonic decreasing queue
 - **Time to solve:** 45-60 minutes
 - **Expected complexity:** O(n) time, O(k) space
+
+### Problem 5: Daily Temperatures ⭐⭐ (Medium)
+
+**LeetCode #739**
+
+- **Why essential:** Monotonic stack pattern for next greater element problems
+- **Key concepts:** Monotonic stack, index tracking, temperature comparison
+- **Time to solve:** 35-45 minutes
+- **Expected complexity:** O(n) time, O(n) space
 
 ---
 
@@ -62,14 +62,14 @@
 - Circular queue implementation
 
 ### Monotonic Stack/Queue
-- Maintaining order properties
-- Next greater/smaller element problems
+- Maintaining order while processing
+- Next greater/smaller element patterns
 - Sliding window optimizations
 
 ### Design Patterns
-- Auxiliary data structures
-- Two-stack queue implementation
-- Stack-based recursion simulation
+- Using auxiliary stacks for optimization
+- Stack-based expression evaluation
+- Queue implementation with stacks
 
 ---
 
@@ -83,16 +83,16 @@
 ### Step 2: Plan Algorithm (10-15 minutes)
 - Map problem to stack/queue operations
 - Handle edge cases (empty, single element)
-- Design auxiliary structures if needed
+- Consider auxiliary data structures
 
 ### Step 3: Implement (25-35 minutes)
-- Code step by step with clear operations
-- Test with example inputs
-- Verify boundary conditions
+- Code step by step
+- Test with examples
+- Verify operation complexity
 
 ### Step 4: Optimize & Review (10-15 minutes)
 - Check for unnecessary operations
-- Verify complexity requirements
+- Validate space complexity
 - Compare with standard patterns
 
 ---
@@ -102,80 +102,61 @@
 Complete these 5 problems over 4-5 days, spending about 1-1.5 hours per problem. This will give you mastery of:
 
 - Stack and queue fundamentals
-- Monotonic data structure patterns
+- Monotonic stack patterns
 - Expression evaluation techniques
-- Sliding window optimizations
+- Sliding window with deque
 
 ---
 
 ## 📝 Related LeetCode Problems
 
 ### Stack Problems:
-- **Implement Stack using Queues** (LeetCode #225)
-- **Baseball Game** (LeetCode #682)
-- **Next Greater Element I** (LeetCode #496)
-- **Largest Rectangle in Histogram** (LeetCode #84)
-- **Trapping Rain Water** (LeetCode #42)
+- **Baseball Game** (LeetCode #682) - Easy
+- **Next Greater Element I** (LeetCode #496) - Easy
+- **Next Greater Element II** (LeetCode #503) - Medium
+- **Largest Rectangle in Histogram** (LeetCode #84) - Hard
+- **Trapping Rain Water** (LeetCode #42) - Hard
 
 ### Queue Problems:
-- **Implement Queue using Stacks** (LeetCode #232)
-- **Design Circular Queue** (LeetCode #622)
-- **Moving Average from Data Stream** (LeetCode #346)
-- **Number of Islands** (LeetCode #200) - BFS approach
+- **Implement Queue using Stacks** (LeetCode #232) - Easy
+- **Implement Stack using Queues** (LeetCode #225) - Easy
+- **Design Circular Queue** (LeetCode #622) - Medium
+- **Moving Average from Data Stream** (LeetCode #346) - Easy
 
 ### Deque Problems:
-- **Shortest Subarray with Sum at Least K** (LeetCode #862)
-- **Constrained Subsequence Sum** (LeetCode #1425)
-- **Jump Game VI** (LeetCode #1696)
+- **Shortest Subarray with Sum at Least K** (LeetCode #862) - Hard
+- **Constrained Subsequence Sum** (LeetCode #1425) - Hard
 
 ---
 
-## 🔧 Common Implementation Patterns
+## 🔧 Implementation Tips
 
-### Stack using Array:
+### Stack Implementation:
 ```javascript
-class Stack {
-    constructor() {
-        this.items = [];
-    }
-    
-    push(item) { this.items.push(item); }
-    pop() { return this.items.pop(); }
-    peek() { return this.items[this.items.length - 1]; }
-    isEmpty() { return this.items.length === 0; }
-}
+// Array-based stack
+const stack = [];
+stack.push(item);    // O(1)
+const top = stack.pop(); // O(1)
 ```
 
-### Queue using Array:
+### Queue Implementation:
 ```javascript
-class Queue {
-    constructor() {
-        this.items = [];
-    }
-    
-    enqueue(item) { this.items.push(item); }
-    dequeue() { return this.items.shift(); }
-    front() { return this.items[0]; }
-    isEmpty() { return this.items.length === 0; }
-}
+// Array-based queue (inefficient)
+const queue = [];
+queue.push(item);        // O(1) enqueue
+const front = queue.shift(); // O(n) dequeue
+
+// Better: Use two stacks or circular buffer
 ```
 
-### Monotonic Stack Pattern:
+### Deque Implementation:
 ```javascript
-function nextGreaterElement(nums) {
-    const stack = [];
-    const result = new Array(nums.length).fill(-1);
-    
-    for (let i = 0; i < nums.length; i++) {
-        while (stack.length && nums[stack[stack.length - 1]] < nums[i]) {
-            const index = stack.pop();
-            result[index] = nums[i];
-        }
-        stack.push(i);
-    }
-    
-    return result;
-}
+// Use array with both ends
+const deque = [];
+deque.push(item);     // Add to rear
+deque.unshift(item);  // Add to front
+deque.pop();          // Remove from rear
+deque.shift();        // Remove from front
 ```
 
 ---
