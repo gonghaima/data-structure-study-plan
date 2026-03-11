@@ -1,4 +1,4 @@
-const preorderTraversal = require('./solution');
+const preorderTraversal = require('./solution3');
 const testData = require('./testData');
 
 /**

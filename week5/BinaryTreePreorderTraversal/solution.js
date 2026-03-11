@@ -11,11 +11,13 @@
  * @param {TreeNode} root
  * @return {number[]}
  */
+
+// Recursive approach - most intuitive
+
 var preorderTraversal = function(root) {
-    // TODO: Implement preorder traversal
-    // Hint: Root -> Left -> Right
+    if (!root) return [];
     
-    return [];
+    return [root.val, ...preorderTraversal(root.left), ...preorderTraversal(root.right)];
 };
 
 module.exports = preorderTraversal;
