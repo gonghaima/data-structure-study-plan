@@ -1,4 +1,4 @@
-const postorderTraversal = require('./solution');
+const postorderTraversal = require('./solution1');
 const testData = require('./testData');
 
 /**
