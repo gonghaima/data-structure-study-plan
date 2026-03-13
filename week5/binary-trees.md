@@ -1,123 +1,104 @@
-### Binary Trees
-**Concepts to Master:**
-- Tree traversals (inorder, preorder, postorder, level-order)
-- Tree construction and validation
-- Path sum problems and tree diameter
-- Lowest common ancestor
+# Binary Trees Problems - Week 5
 
-**Key Topics:**
-- Recursive vs iterative traversals
-- Tree serialization and deserialization
-- Tree height and balance
-- Morris traversal (advanced)
-
-**Practice Goals:** 15-20 problems
-**Recommended Problems:**
-- Binary Tree Inorder Traversal
-- Maximum Depth of Binary Tree
-- Path Sum
-- Lowest Common Ancestor
-- Binary Tree Level Order Traversal
-
-
-## 🎯 Binary Trees - Advanced Data Structure Mastery
+## 🎯 Fifth Week - Binary Trees
 
 ### Problem 1: Binary Tree Inorder Traversal ⭐ (Easy - Perfect Starting Point)
 
 **LeetCode #94**
 
-- **Why start here:** Fundamental tree traversal and recursion understanding
-- **Key concepts:** Inorder traversal (left-root-right), recursive vs iterative approaches
-- **Time to solve:** 25-35 minutes
-- **Expected complexity:** O(n) time, O(h) space (h = height)
-
-### Problem 2: Maximum Depth of Binary Tree ⭐ (Easy)
-
-**LeetCode #104**
-
-- **Why next:** Introduces tree height calculation and recursive thinking
-- **Key concepts:** Tree depth, recursive depth calculation, base cases
+- **Why start here:** Fundamental tree traversal and recursion pattern
+- **Key concepts:** Inorder traversal (left-root-right), recursion vs iteration, stack-based approach
 - **Time to solve:** 20-30 minutes
 - **Expected complexity:** O(n) time, O(h) space
 
-### Problem 3: Path Sum ⭐⭐ (Easy-Medium)
+### Problem 2: Binary Tree Preorder Traversal ⭐ (Easy)
 
-**LeetCode #112**
+**LeetCode #144**
 
-- **Why important:** Root-to-leaf path problems and backtracking concepts
-- **Key concepts:** Path sum validation, recursive path tracking, leaf node detection
-- **Time to solve:** 30-40 minutes
+- **Why next:** Another basic traversal pattern to master
+- **Key concepts:** Preorder traversal (root-left-right), iterative with stack
+- **Time to solve:** 20-30 minutes
 - **Expected complexity:** O(n) time, O(h) space
 
-### Problem 4: Lowest Common Ancestor of a Binary Tree ⭐⭐⭐ (Medium)
+### Problem 3: Binary Tree Postorder Traversal ⭐ (Easy)
 
-**LeetCode #236**
+**LeetCode #145**
 
-- **Why crucial:** Advanced tree navigation and ancestor finding algorithms
-- **Key concepts:** LCA algorithms, tree traversal, parent-child relationships
-- **Time to solve:** 40-50 minutes
+- **Why important:** Completes the three fundamental traversal patterns
+- **Key concepts:** Postorder traversal (left-right-root), two-stack approach
+- **Time to solve:** 25-35 minutes
 - **Expected complexity:** O(n) time, O(h) space
 
-### Problem 5: Binary Tree Level Order Traversal ⭐⭐ (Medium)
+### Problem 4: Maximum Depth of Binary Tree ⭐ (Easy)
 
-**LeetCode #102**
+**LeetCode #104**
 
-- **Why essential:** BFS traversal and level-by-level processing
-- **Key concepts:** Level-order traversal, queue usage, tree width processing
+- **Why crucial:** Introduction to tree properties and recursive thinking
+- **Key concepts:** Height calculation, DFS vs BFS approaches
+- **Time to solve:** 20-30 minutes
+- **Expected complexity:** O(n) time, O(h) space
+
+### Problem 5: Validate Binary Search Tree ⭐⭐ (Medium)
+
+**LeetCode #98**
+
+- **Why essential:** Understanding BST properties and range validation
+- **Key concepts:** BST invariant, range checking, inorder traversal property
 - **Time to solve:** 35-45 minutes
-- **Expected complexity:** O(n) time, O(w) space (w = max width)
+- **Expected complexity:** O(n) time, O(h) space
 
 ---
 
 ## 🧠 Core Concepts to Master
 
-### Tree Traversals
-- **Inorder:** Left → Root → Right (sorted order for BST)
-- **Preorder:** Root → Left → Right (tree copying)
-- **Postorder:** Left → Right → Root (tree deletion)
-- **Level-order:** BFS traversal using queue
+### Tree Structure and Terminology
+- **Node:** Contains value and pointers to children
+- **Root:** Top node with no parent
+- **Leaf:** Node with no children
+- **Height:** Longest path from node to leaf
+- **Depth:** Distance from root to node
+- **Balanced:** Height difference ≤ 1 for all nodes
 
-### Tree Construction and Validation
-- Building trees from traversal arrays
-- Validating BST properties
-- Tree serialization and deserialization
-- Balanced tree detection
+### Tree Traversal Methods
+- **Inorder (Left-Root-Right):** Gives sorted order for BST
+- **Preorder (Root-Left-Right):** Used for tree copying
+- **Postorder (Left-Right-Root):** Used for tree deletion
+- **Level-order (BFS):** Process nodes level by level
 
-### Path and Distance Problems
-- Root-to-leaf path calculations
-- Tree diameter and longest paths
-- Path sum variations
-- Distance between nodes
+### Binary Search Tree (BST) Properties
+- Left subtree values < root value
+- Right subtree values > root value
+- Both subtrees are also BSTs
+- Inorder traversal gives sorted sequence
 
-### Tree Modification
-- Tree insertion and deletion
-- Tree balancing operations
-- Subtree operations
-- Tree flattening and conversion
+### Recursion Patterns
+- **Base case:** Handle null or leaf nodes
+- **Recursive case:** Process current node and recurse on children
+- **Return value:** Aggregate results from subtrees
 
 ---
 
 ## 📋 Study Approach for Each Problem
 
-### Step 1: Visualize Tree Structure (10-15 minutes)
-- Draw the tree with given examples
-- Identify traversal patterns needed
-- Consider recursive vs iterative approaches
+### Step 1: Visualize the Tree (10-15 minutes)
+- Draw example trees
+- Trace traversal order
+- Identify base cases (null, leaf, single node)
 
-### Step 2: Plan Algorithm (10-15 minutes)
-- Choose appropriate traversal method
-- Handle base cases (null nodes, leaf nodes)
-- Consider auxiliary data structures (stack, queue)
+### Step 2: Choose Approach (10-15 minutes)
+- Recursive vs iterative
+- DFS vs BFS
+- Additional data structures needed (stack, queue)
 
-### Step 3: Implement Solution (25-35 minutes)
-- Code recursive or iterative solution
-- Handle edge cases (empty tree, single node)
-- Test with provided examples
+### Step 3: Implement (20-30 minutes)
+- Code the solution step by step
+- Handle null pointers carefully
+- Test with drawn examples
 
-### Step 4: Optimize & Analyze (10-15 minutes)
+### Step 4: Optimize & Review (10-15 minutes)
 - Verify time/space complexity
 - Consider Morris traversal for O(1) space
-- Compare different approaches
+- Compare recursive vs iterative trade-offs
 
 ---
 
@@ -125,143 +106,219 @@
 
 Complete these 5 problems over 4-5 days, spending about 1-1.5 hours per problem. This will give you mastery of:
 
-- Tree traversal algorithms
-- Recursive problem-solving patterns
-- Path and level-based operations
-- Tree construction and validation
+- All three DFS traversal patterns
+- Recursive tree algorithms
+- BST properties and validation
+- Tree height and depth calculations
 
 ---
 
-## 📝 Related Problems to Practice
+## 📝 Related Problems
 
-Once comfortable with the basics, tackle:
-
-**Traversal Variations:**
-- **Binary Tree Preorder Traversal** (LeetCode #144)
-- **Binary Tree Postorder Traversal** (LeetCode #145)
+### Basic Traversal Problems
+- **Binary Tree Level Order Traversal** (LeetCode #102)
 - **Binary Tree Zigzag Level Order Traversal** (LeetCode #103)
-- **Vertical Order Traversal** (LeetCode #987)
-
-**Tree Construction:**
-- **Construct Binary Tree from Preorder and Inorder** (LeetCode #105)
-- **Construct Binary Tree from Inorder and Postorder** (LeetCode #106)
-- **Serialize and Deserialize Binary Tree** (LeetCode #297)
-- **Convert Sorted Array to Binary Search Tree** (LeetCode #108)
-
-**Path Problems:**
-- **Path Sum II** (LeetCode #113)
-- **Path Sum III** (LeetCode #437)
-- **Binary Tree Maximum Path Sum** (LeetCode #124)
-- **Diameter of Binary Tree** (LeetCode #543)
-
-**Tree Validation:**
-- **Validate Binary Search Tree** (LeetCode #98)
-- **Same Tree** (LeetCode #100)
-- **Symmetric Tree** (LeetCode #101)
-- **Balanced Binary Tree** (LeetCode #110)
-
-**Advanced Tree Operations:**
-- **Flatten Binary Tree to Linked List** (LeetCode #114)
-- **Populating Next Right Pointers** (LeetCode #116)
 - **Binary Tree Right Side View** (LeetCode #199)
+- **Binary Tree Vertical Order Traversal** (LeetCode #314)
+- **N-ary Tree Preorder Traversal** (LeetCode #589)
+- **N-ary Tree Postorder Traversal** (LeetCode #590)
+- **N-ary Tree Level Order Traversal** (LeetCode #429)
+
+### Tree Properties
+- **Minimum Depth of Binary Tree** (LeetCode #111)
+- **Balanced Binary Tree** (LeetCode #110)
+- **Diameter of Binary Tree** (LeetCode #543)
+- **Symmetric Tree** (LeetCode #101)
+- **Same Tree** (LeetCode #100)
+- **Subtree of Another Tree** (LeetCode #572)
 - **Count Complete Tree Nodes** (LeetCode #222)
 
-**Binary Search Tree Specific:**
-- **Kth Smallest Element in a BST** (LeetCode #230)
-- **Lowest Common Ancestor of a BST** (LeetCode #235)
+### Path Problems
+- **Binary Tree Paths** (LeetCode #257)
+- **Path Sum** (LeetCode #112)
+- **Path Sum II** (LeetCode #113)
+- **Path Sum III** (LeetCode #437)
+- **Sum Root to Leaf Numbers** (LeetCode #129)
+- **Binary Tree Maximum Path Sum** (LeetCode #124)
+
+### BST Problems
+- **Search in a Binary Search Tree** (LeetCode #700)
 - **Insert into a Binary Search Tree** (LeetCode #701)
 - **Delete Node in a BST** (LeetCode #450)
+- **Kth Smallest Element in a BST** (LeetCode #230)
+- **Convert Sorted Array to Binary Search Tree** (LeetCode #108)
+- **Convert BST to Greater Tree** (LeetCode #538)
+- **Recover Binary Search Tree** (LeetCode #99)
+
+### Construction Problems
+- **Construct Binary Tree from Preorder and Inorder** (LeetCode #105)
+- **Construct Binary Tree from Inorder and Postorder** (LeetCode #106)
+- **Construct Binary Tree from Preorder and Postorder** (LeetCode #889)
+- **Maximum Binary Tree** (LeetCode #654)
+- **Serialize and Deserialize Binary Tree** (LeetCode #297)
+
+### Lowest Common Ancestor (LCA)
+- **Lowest Common Ancestor of a Binary Tree** (LeetCode #236)
+- **Lowest Common Ancestor of a BST** (LeetCode #235)
+- **Lowest Common Ancestor of Deepest Leaves** (LeetCode #1123)
+
+### Advanced Tree Problems
+- **Flatten Binary Tree to Linked List** (LeetCode #114)
+- **Populating Next Right Pointers** (LeetCode #116)
+- **Populating Next Right Pointers II** (LeetCode #117)
+- **Binary Tree Cameras** (LeetCode #968)
+- **Distribute Coins in Binary Tree** (LeetCode #979)
+- **House Robber III** (LeetCode #337)
 
 ---
 
-## 🔗 Implementation Patterns
+## 🔑 Key Patterns to Recognize
 
-### Basic Tree Node Structure
+### Pattern 1: DFS Traversal
+- Use recursion or explicit stack
+- Process nodes in specific order
+- Examples: All traversal problems
+
+### Pattern 2: Tree Properties
+- Calculate height, depth, or diameter
+- Use post-order traversal pattern
+- Examples: Max Depth, Balanced Tree
+
+### Pattern 3: Path Finding
+- Track path from root to node
+- Use backtracking or recursion
+- Examples: Path Sum, Binary Tree Paths
+
+### Pattern 4: BST Operations
+- Leverage sorted property
+- Use inorder traversal
+- Examples: Validate BST, Kth Smallest
+
+### Pattern 5: Tree Construction
+- Use traversal arrays to rebuild
+- Identify root and split subtrees
+- Examples: Construct from Preorder/Inorder
+
+### Pattern 6: Level-Order Processing
+- Use BFS with queue
+- Process nodes level by level
+- Examples: Level Order Traversal, Right Side View
+
+---
+
+## 💡 Common Pitfalls to Avoid
+
+1. **Null pointer errors:** Always check if node is null before accessing
+2. **Base case handling:** Missing or incorrect base cases in recursion
+3. **BST validation:** Using only local comparison instead of range checking
+4. **Height vs depth confusion:** Height is bottom-up, depth is top-down
+5. **Traversal order mistakes:** Mixing up pre/in/post order sequences
+6. **Stack overflow:** Deep recursion on skewed trees
+7. **Modifying tree structure:** Accidentally changing pointers during traversal
+
+---
+
+## 🔬 Time and Space Complexity
+
+### Common Complexities
+- **Traversal:** O(n) time, O(h) space (recursion stack)
+- **Search in BST:** O(h) time, O(1) space (iterative)
+- **Level-order:** O(n) time, O(w) space (w = max width)
+- **Morris Traversal:** O(n) time, O(1) space
+
+### Space Optimization
+- **Recursive:** O(h) space for call stack
+- **Iterative:** O(h) space for explicit stack
+- **Morris:** O(1) space but modifies tree temporarily
+
+---
+
+## 🚀 Advanced Topics After These 5
+
+Once comfortable with the basics, explore:
+
+- **Segment Trees:** Range query optimization
+- **Fenwick Trees (BIT):** Prefix sum queries
+- **Trie:** Prefix tree for strings
+- **AVL Trees:** Self-balancing BST
+- **Red-Black Trees:** Another self-balancing BST
+- **B-Trees:** Multi-way search trees for databases
+
+---
+
+## 📊 Progress Tracking
+
+- [ ] Binary Tree Inorder Traversal
+- [ ] Binary Tree Preorder Traversal
+- [ ] Binary Tree Postorder Traversal
+- [ ] Maximum Depth of Binary Tree
+- [ ] Validate Binary Search Tree
+
+**Target:** Complete all 5 problems with both recursive and iterative solutions where applicable.
+
+---
+
+## 🎓 Key Takeaways
+
+### When to Use DFS
+- Need to explore all paths
+- Tree traversal problems
+- Path sum calculations
+- Recursive solutions preferred
+
+### When to Use BFS
+- Level-order processing
+- Shortest path in unweighted tree
+- Finding nodes at specific level
+- Right/left side view
+
+### Recursive vs Iterative
+- **Recursive:** Cleaner code, uses call stack
+- **Iterative:** More control, avoids stack overflow
+- **Morris:** Optimal space but complex
+
+### BST Advantages
+- O(log n) search in balanced tree
+- Inorder gives sorted sequence
+- Efficient insert/delete operations
+- Range queries possible
+
+---
+
+## 🔧 Common Tree Node Definition
+
 ```javascript
 function TreeNode(val, left, right) {
-    this.val = (val === undefined ? 0 : val);
-    this.left = (left === undefined ? null : left);
-    this.right = (right === undefined ? null : right);
-}
-```
-
-### Recursive Traversal Pattern
-```javascript
-function inorderTraversal(root) {
-    if (!root) return [];
-    return [
-        ...inorderTraversal(root.left),
-        root.val,
-        ...inorderTraversal(root.right)
-    ];
-}
-```
-
-### Iterative Traversal with Stack
-```javascript
-function inorderIterative(root) {
-    const result = [];
-    const stack = [];
-    let current = root;
-    
-    while (current || stack.length) {
-        while (current) {
-            stack.push(current);
-            current = current.left;
-        }
-        current = stack.pop();
-        result.push(current.val);
-        current = current.right;
-    }
-    return result;
-}
-```
-
-### Level Order Traversal with Queue
-```javascript
-function levelOrder(root) {
-    if (!root) return [];
-    const result = [];
-    const queue = [root];
-    
-    while (queue.length) {
-        const levelSize = queue.length;
-        const level = [];
-        
-        for (let i = 0; i < levelSize; i++) {
-            const node = queue.shift();
-            level.push(node.val);
-            
-            if (node.left) queue.push(node.left);
-            if (node.right) queue.push(node.right);
-        }
-        result.push(level);
-    }
-    return result;
-}
-```
-
-### Path Sum Pattern
-```javascript
-function hasPathSum(root, targetSum) {
-    if (!root) return false;
-    if (!root.left && !root.right) {
-        return root.val === targetSum;
-    }
-    
-    const remaining = targetSum - root.val;
-    return hasPathSum(root.left, remaining) || 
-           hasPathSum(root.right, remaining);
+    this.val = (val === undefined ? 0 : val)
+    this.left = (left === undefined ? null : left)
+    this.right = (right === undefined ? null : right)
 }
 ```
 
 ---
 
-## 🚀 Getting Started Options
+## 📚 Study Resources
 
-1. **Master basic tree traversals** with recursive and iterative approaches
-2. **Practice tree construction** from different input formats
-3. **Learn path-based algorithms** for sum and distance problems
-4. **Implement tree validation** and property checking
+### Visualization Tools
+- VisuAlgo: Tree visualization
+- LeetCode Playground: Test with custom trees
+- Draw.io: Sketch tree structures
 
-Which approach would help you build strong binary tree problem-solving skills most effectively?
+### Key Algorithms to Master
+1. **DFS Traversals:** Inorder, Preorder, Postorder
+2. **BFS Traversal:** Level-order
+3. **Morris Traversal:** O(1) space traversal
+4. **BST Operations:** Search, Insert, Delete
+5. **Tree Construction:** From traversal arrays
+6. **LCA Algorithms:** Finding common ancestors
+
+---
+
+## 🎯 Interview Tips
+
+1. **Always ask about tree properties:** Balanced? BST? Complete?
+2. **Clarify null handling:** How to handle empty trees?
+3. **Discuss trade-offs:** Recursive vs iterative approaches
+4. **Consider edge cases:** Single node, skewed tree, null root
+5. **Optimize space:** Mention Morris traversal for O(1) space
+6. **Test thoroughly:** Use small examples to verify logic

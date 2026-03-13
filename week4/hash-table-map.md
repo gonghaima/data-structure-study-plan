@@ -1,13 +1,13 @@
 # Hash Tables/Hash Maps Problems - Week 4
 
-## 🎯 Fourth Week - Hash Tables/Hash Maps Problems
+## 🎯 Fourth Week - Hash Tables and Hash Maps
 
 ### Problem 1: Two Sum ⭐ (Easy - Perfect Starting Point)
 
 **LeetCode #1**
 
-- **Why start here:** Classic hash map usage for fast lookup and complement search
-- **Key concepts:** Hash map for O(1) lookup, single-pass solution, complement calculation
+- **Why start here:** Classic hash map application for O(n) lookup optimization
+- **Key concepts:** Hash map for complement lookup, space-time tradeoff
 - **Time to solve:** 20-30 minutes
 - **Expected complexity:** O(n) time, O(n) space
 
@@ -15,95 +15,90 @@
 
 **LeetCode #49**
 
-- **Why next:** Introduces grouping and string hashing techniques
-- **Key concepts:** Hashing sorted strings, character frequency counting, grouping by hash key
+- **Why next:** Introduces hash map for grouping and string manipulation
+- **Key concepts:** Hash key design, character frequency, sorting vs counting
 - **Time to solve:** 30-40 minutes
-- **Expected complexity:** O(n * k log k) time, O(n * k) space
+- **Expected complexity:** O(n * k) time, O(n * k) space (k = avg string length)
 
 ### Problem 3: Top K Frequent Elements ⭐⭐ (Medium)
 
 **LeetCode #347**
 
-- **Why important:** Combines frequency counting with efficient sorting/selection
-- **Key concepts:** Hash map for frequency, bucket sort, heap usage
+- **Why important:** Combines hash map with frequency counting and sorting
+- **Key concepts:** Frequency map, bucket sort, heap optimization
 - **Time to solve:** 35-45 minutes
 - **Expected complexity:** O(n) time, O(n) space
 
-### Problem 4: Longest Consecutive Sequence ⭐⭐⭐ (Hard)
+### Problem 4: Longest Consecutive Sequence ⭐⭐⭐ (Medium)
 
 **LeetCode #128**
 
-- **Why crucial:** Advanced hash set usage for sequence detection without sorting
-- **Key concepts:** Hash set for O(1) lookup, sequence expansion, avoiding duplicates
+- **Why crucial:** Advanced hash set usage for sequence detection
+- **Key concepts:** Hash set for O(1) lookup, sequence building, avoiding duplicates
 - **Time to solve:** 40-50 minutes
 - **Expected complexity:** O(n) time, O(n) space
 
-### Problem 5: Design HashMap ⭐⭐ (Medium)
+### Problem 5: Design HashMap ⭐⭐ (Easy-Medium)
 
 **LeetCode #706**
 
-- **Why essential:** Understanding hash table internals and collision handling
-- **Key concepts:** Array buckets, hash function, collision resolution, load factor
-- **Time to solve:** 45-55 minutes
-- **Expected complexity:** O(1) average time, O(n) space
+- **Why essential:** Understanding hash map internals and collision handling
+- **Key concepts:** Hash function, chaining, array-based implementation
+- **Time to solve:** 35-45 minutes
+- **Expected complexity:** O(1) average for operations
 
 ---
 
 ## 🧠 Core Concepts to Master
 
-### Hash Function Design and Collision Handling
-- Hash function design and collision handling
-- Load factor and rehashing
-- Applications in counting, grouping, and lookup
-- Two-sum variations and frequency problems
-
-### Key Topics
-- Open addressing vs chaining
-- Hash function properties
-- Time complexity analysis
-- Space-time tradeoffs
+### Hash Function Design
+- Deterministic mapping
+- Uniform distribution
+- Minimizing collisions
+- Modulo operation for array indexing
 
 ### Collision Handling
-- Chaining with linked lists
-- Open addressing (linear/quadratic probing)
-- Double hashing techniques
-- Performance implications
+- **Chaining:** Linked lists at each bucket
+- **Open Addressing:** Linear probing, quadratic probing
+- **Double Hashing:** Secondary hash function
+- Trade-offs between methods
 
-### Applications Patterns
-- Fast lookup and existence checking
-- Frequency counting and grouping
-- Complement and pair finding
+### Load Factor and Rehashing
+- Load factor = n / capacity
+- Typical threshold: 0.75
+- Dynamic resizing strategy
+- Amortized O(1) operations
+
+### Applications
+- Fast lookup and insertion
+- Counting frequencies
+- Grouping related items
+- Detecting duplicates
 - Caching and memoization
-
-### Space-Time Tradeoffs
-- Memory usage vs speed
-- Hash table sizing
-- Dynamic resizing strategies
-- Cache-friendly implementations
 
 ---
 
 ## 📋 Study Approach for Each Problem
 
-### Step 1: Identify Hash Usage (10-15 minutes)
-- Determine if fast lookup is needed
-- Choose between HashMap vs HashSet
-- Consider key-value relationships
+### Step 1: Identify the Pattern (10-15 minutes)
+- Recognize if hash map/set is optimal
+- Determine what to use as key
+- Consider value structure (count, list, set)
 
-### Step 2: Design Hash Strategy (10-15 minutes)
-- Select appropriate hash key
-- Handle collision scenarios
-- Plan for edge cases (empty, duplicates)
+### Step 2: Design the Solution (10-15 minutes)
+- Choose Map vs Set
+- Plan key-value relationships
+- Handle edge cases (empty input, duplicates)
 
-### Step 3: Implement (25-35 minutes)
+### Step 3: Implement (20-30 minutes)
 - Code the hash-based solution
-- Handle hash operations correctly
-- Test with provided examples
+- Handle collisions if designing from scratch
+- Test with examples
 
-### Step 4: Optimize & Analyze (10-15 minutes)
-- Verify time/space complexity
-- Consider alternative hash strategies
-- Compare with brute force approaches
+### Step 4: Optimize & Review (10-15 minutes)
+- Verify O(1) average operations
+- Check space usage
+- Compare with alternative approaches
 
 ---
 
@@ -111,107 +106,151 @@
 
 Complete these 5 problems over 4-5 days, spending about 1-1.5 hours per problem. This will give you mastery of:
 
-- Hash table fundamentals
-- Collision handling strategies
+- Hash map and hash set operations
 - Frequency counting patterns
-- Grouping and lookup optimizations
+- Grouping and categorization
+- Custom hash function design
 
 ---
 
-## 📝 Related Problems to Practice
+## 📝 Related Problems
 
-Once comfortable with the basics, tackle:
-
-**Frequency & Counting:**
-- **Subarray Sum Equals K** (LeetCode #560)
-- **Contains Duplicate** (LeetCode #217)
-- **First Unique Character in a String** (LeetCode #387)
-
-**String & Anagram Problems:**
-- **Valid Anagram** (LeetCode #242)
-- **Find All Anagrams in a String** (LeetCode #438)
-- **Isomorphic Strings** (LeetCode #205)
-
-**Advanced Applications:**
-- **Minimum Window Substring** (LeetCode #76)
-- **Copy List with Random Pointer** (LeetCode #138)
-- **Word Pattern** (LeetCode #290)
-- **LRU Cache** (LeetCode #146)
-- **Insert Delete GetRandom O(1)** (LeetCode #380)
-- **Design Twitter** (LeetCode #355)
-
-**Set Operations:**
-- **Intersection of Two Arrays** (LeetCode #349)
-- **Intersection of Two Arrays II** (LeetCode #350)
-- **Happy Number** (LeetCode #202)
-- **Find Duplicate Subtrees** (LeetCode #652)
-- **Unique Number of Occurrences** (LeetCode #1207)
-- **Single Number** (LeetCode #136)
-
-**Substring & Window Problems:**
-- **Longest Substring Without Repeating Characters** (LeetCode #3)
-- **Substring with Concatenation of All Words** (LeetCode #30)
-- **Find All Anagrams in a String** (LeetCode #438)
-- **Permutation in String** (LeetCode #567)
-
-**Array & Sum Problems:**
-- **Two Sum II - Input array is sorted** (LeetCode #167)
+### Two-Sum Variations
+- **Two Sum II - Input Array Is Sorted** (LeetCode #167)
 - **3Sum** (LeetCode #15)
 - **4Sum** (LeetCode #18)
-- **Continuous Subarray Sum** (LeetCode #523)
-- **Subarray Sum Equals K** (LeetCode #560)
-- **Maximum Size Subarray Sum Equals k** (LeetCode #325)
+- **Two Sum III - Data Structure Design** (LeetCode #170)
+- **Two Sum IV - Input is a BST** (LeetCode #653)
 
-**Design Problems:**
+### Frequency and Counting
+- **Valid Anagram** (LeetCode #242)
+- **First Unique Character in a String** (LeetCode #387)
+- **Sort Characters By Frequency** (LeetCode #451)
+- **Top K Frequent Words** (LeetCode #692)
+- **Find All Anagrams in a String** (LeetCode #438)
+
+### Grouping and Categorization
+- **Group Shifted Strings** (LeetCode #249)
+- **Encode and Decode TinyURL** (LeetCode #535)
+- **Subdomain Visit Count** (LeetCode #811)
+- **Brick Wall** (LeetCode #554)
+
+### Sequence and Subarray Problems
+- **Subarray Sum Equals K** (LeetCode #560)
+- **Continuous Subarray Sum** (LeetCode #523)
+- **Longest Substring Without Repeating Characters** (LeetCode #3)
+- **Minimum Window Substring** (LeetCode #76)
+
+### Design Problems
 - **Design HashSet** (LeetCode #705)
 - **Design HashMap** (LeetCode #706)
-- **All O`one Data Structure** (LeetCode #432)
-- **Time Based Key-Value Store** (LeetCode #981)
+- **LRU Cache** (LeetCode #146)
+- **Insert Delete GetRandom O(1)** (LeetCode #380)
 
-**Graph & Tree with Hash:**
+### Advanced Hash Map Problems
+- **Copy List with Random Pointer** (LeetCode #138)
 - **Clone Graph** (LeetCode #133)
-- **Course Schedule** (LeetCode #207)
-- **Alien Dictionary** (LeetCode #269)
-- **Word Ladder** (LeetCode #127)
+- **Word Pattern** (LeetCode #290)
+- **Isomorphic Strings** (LeetCode #205)
 
 ---
 
-## 🔗 Hash Table Implementation Patterns
+## 🔑 Key Patterns to Recognize
 
-### Basic HashMap Operations
-```javascript
-const map = new Map();
-map.set(key, value);    // O(1) average
-map.get(key);           // O(1) average
-map.has(key);           // O(1) average
-map.delete(key);        // O(1) average
-```
+### Pattern 1: Complement Lookup
+- Store seen elements in hash map
+- Check for complement/target
+- Examples: Two Sum, Pair with Target Sum
 
-### Frequency Counting Pattern
-```javascript
-const freq = new Map();
-for (const item of array) {
-    freq.set(item, (freq.get(item) || 0) + 1);
-}
-```
+### Pattern 2: Frequency Counting
+- Count occurrences using hash map
+- Process based on frequencies
+- Examples: Top K Frequent, Valid Anagram
 
-### Grouping Pattern
-```javascript
-const groups = new Map();
-for (const item of array) {
-    const key = getKey(item);
-    if (!groups.has(key)) groups.set(key, []);
-    groups.get(key).push(item);
-}
-```
+### Pattern 3: Grouping by Key
+- Design appropriate hash key
+- Group items with same key
+- Examples: Group Anagrams, Group Shifted Strings
+
+### Pattern 4: Prefix Sum with Hash Map
+- Store cumulative sums as keys
+- Find subarrays with target sum
+- Examples: Subarray Sum Equals K, Continuous Subarray Sum
+
+### Pattern 5: Index Mapping
+- Map values to indices
+- Track positions for lookups
+- Examples: Two Sum, Contains Duplicate II
 
 ---
 
-## 🚀 Getting Started Options
+## 💡 Common Pitfalls to Avoid
 
-1. **Review hash table fundamentals** and collision handling
-2. **Practice frequency counting** with simple problems
-3. **Master the Two Sum pattern** and its variations
-4. **Implement custom hash table** to understand internals
+1. **Hash collision handling:** Not considering collision scenarios
+2. **Key design:** Using mutable objects as keys
+3. **Space complexity:** Creating unnecessary copies
+4. **Edge cases:** Empty input, single element, all duplicates
+5. **Integer overflow:** When computing hash codes
+6. **Null handling:** Not checking for null keys/values
 
-Which approach would help you build strong hash table problem-solving skills most effectively?
+---
+
+## 🔬 Time Complexity Analysis
+
+### Hash Map Operations
+- **Insert:** O(1) average, O(n) worst case
+- **Lookup:** O(1) average, O(n) worst case
+- **Delete:** O(1) average, O(n) worst case
+- **Rehashing:** O(n) but amortized O(1)
+
+### Space-Time Tradeoffs
+- **Brute Force:** O(n²) time, O(1) space
+- **Hash Map:** O(n) time, O(n) space
+- **Sorted Array:** O(n log n) time, O(1) space
+
+---
+
+## 🚀 Advanced Topics After These 5
+
+Once comfortable with the basics, explore:
+
+- **Consistent Hashing:** Distributed systems
+- **Bloom Filters:** Probabilistic data structures
+- **Count-Min Sketch:** Frequency estimation
+- **Trie with Hash Map:** Autocomplete systems
+- **Rolling Hash:** Rabin-Karp algorithm
+
+---
+
+## 📊 Progress Tracking
+
+- [ ] Two Sum
+- [ ] Group Anagrams
+- [ ] Top K Frequent Elements
+- [ ] Longest Consecutive Sequence
+- [ ] Design HashMap
+
+**Target:** Complete all 5 problems with optimal O(n) or O(1) solutions and understand hash-based optimizations.
+
+---
+
+## 🎓 Key Takeaways
+
+### When to Use Hash Maps
+- Need fast lookup (O(1) average)
+- Counting frequencies
+- Detecting duplicates
+- Grouping related items
+- Caching computed results
+
+### When NOT to Use Hash Maps
+- Need sorted order (use TreeMap/BST)
+- Memory is severely constrained
+- Small dataset (array might be faster)
+- Need range queries (use segment tree)
+
+### Hash Function Properties
+1. **Deterministic:** Same input → same output
+2. **Uniform:** Even distribution across buckets
+3. **Efficient:** Fast to compute
+4. **Avalanche Effect:** Small input change → large output change
