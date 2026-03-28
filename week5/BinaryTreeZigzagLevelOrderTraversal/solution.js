@@ -12,24 +12,32 @@ function TreeNode(val, left, right) {
  * @return {number[][]}
  */
 var zigzagLevelOrder = function (root) {
+  if (!root) return [];
+
   const result = [];
   let queue = [root];
-  while (queue.length) {
-    let next = [];
-    for (let i = 0; i < queue.length; i++) {
-      queue[i] ? result.push(queue[i].val) : result.push(null);
+  let leftToRight = true;
+  while (queue.length > 0) {
+    const levelSize = queue.length;
+    const currentLevel = [];
 
-      if (queue[i] === null) {
-        result.push(null);
+    for (let i = 0; i < levelSize; i++) {
+      const node = queue.shift();
+
+      // Determine where to add the value based on direction
+      if (leftToRight) {
+        currentLevel.push(node.val);
       } else {
-        if (queue[i].left) next.push(queue[i].left);
-        else next.push(null);
-
-        if (queue[i].right) next.push(queue[i].right);
-        else next.push(null);
+        currentLevel.unshift(node.val);
       }
+
+      // Only add actual nodes to the queue
+      if (node.left) queue.push(node.left);
+      if (node.right) queue.push(node.right);
     }
-    queue = next;
+
+    result.push(currentLevel);
+    leftToRight = !leftToRight; // Flip the direction for the next level
   }
   return result;
 };
