@@ -1,3 +1,8 @@
+Follow the pattern for /Users/stevengong/study/data-structure-study-plan/week5/ValidateBinarySearchTree/question.md, create a new folder and question.md from this https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/ 
+
+now create test data, and spec files, and one empty solution.js without implimentation.
+
+
 Follow pattern /Users/stevengong/study/data-structure-study-plan/week3/ConstrainedSubsequenceSum, and /Users/stevengong/study/data-structure-study-plan/week1/SETUP_TEMPLATE.md,
 Create test data, and spec files, and one empty solution.js in the folder /Users/stevengong/study/data-structure-study-plan/week5/ValidateBinarySearchTree/question.md
 
