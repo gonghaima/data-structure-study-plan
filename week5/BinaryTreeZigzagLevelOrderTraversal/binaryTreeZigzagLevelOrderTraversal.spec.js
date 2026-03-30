@@ -1,4 +1,4 @@
-const zigzagLevelOrder = require('./solution');
+const zigzagLevelOrder = require('./solution3');
 const testData = require('./testData');
 
 /**
