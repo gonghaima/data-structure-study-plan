@@ -10,7 +10,8 @@ give me a few common solutions, in solution.js, solution1.js, etc
 give me more common solutions, in solution1.js, solution2.js, etc for /Users/stevengong/study/data-structure-study-plan/week5/BinaryTreeZigzagLevelOrderTraversal/question.md
 
 
-create a complexity-analysis.md in the folder /Users/stevengong/study/data-structure-study-plan/week5/ValidateBinarySearchTree, refer to similar format /Users/stevengong/study/data-structure-study-plan/week1/Shortest_Palindrome/complexity-analysis.md
+create a complexity-analysis.md in the folder /Users/stevengong/study/data-structure-study-plan/week5/BinaryTreeZigzagLevelOrderTraversal, 
+refer to similar format /Users/stevengong/study/data-structure-study-plan/week1/Shortest_Palindrome/complexity-analysis.md
 
 
 
