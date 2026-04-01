@@ -1,4 +1,4 @@
-Follow the pattern for /Users/stevengong/study/data-structure-study-plan/week5/ValidateBinarySearchTree/question.md, create a new folder and question.md from this https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/ 
+Follow the pattern for /Users/stevengong/study/data-structure-study-plan/week5/ValidateBinarySearchTree/question.md, create a new folder and question.md from this https://leetcode.com/problems/binary-tree-right-side-view/description/
 
 now create test data, and spec files, and one empty solution.js without implimentation.
 
