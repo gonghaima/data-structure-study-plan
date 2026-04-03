@@ -7,7 +7,7 @@ Follow pattern /Users/stevengong/study/data-structure-study-plan/week3/Constrain
 Create test data, and spec files, and one empty solution.js in the folder /Users/stevengong/study/data-structure-study-plan/week5/ValidateBinarySearchTree/question.md
 
 give me a few common solutions, in solution.js, solution1.js, etc
-give me more common solutions, in solution1.js, solution2.js, etc for /Users/stevengong/study/data-structure-study-plan/week5/BinaryTreeZigzagLevelOrderTraversal/question.md
+give me more common solutions, in solution1.js, solution2.js, etc for /Users/stevengong/study/data-structure-study-plan/week5/BinaryTreeRightSideView/question.md
 
 
 create a complexity-analysis.md in the folder /Users/stevengong/study/data-structure-study-plan/week5/BinaryTreeZigzagLevelOrderTraversal, 
