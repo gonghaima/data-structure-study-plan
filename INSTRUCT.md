@@ -11,7 +11,7 @@ give me more common solutions, in solution1.js, solution2.js, etc for /Users/ste
 
 
 refer to similar format /Users/stevengong/study/data-structure-study-plan/week1/Shortest_Palindrome/complexity-analysis.md
-create a complexity-analysis.md in the folder /Users/stevengong/study/data-structure-study-plan/week5/NaryTreePreorderTraversal/question.md
+create a complexity-analysis.md in the folder /Users/stevengong/study/data-structure-study-plan/week5/NaryTreePostorderTraversal/question.md
 
 
 
