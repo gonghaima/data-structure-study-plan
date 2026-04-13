@@ -10,10 +10,10 @@ This document analyzes the time and space complexity of three solutions for the 
 
 - **Time Complexity:** O(n)
   - Every node is visited exactly once via DFS.
-- **Space Complexity:** O(n)
+- **Space Complexity:** O(h)
   - Recursion call stack depth is O(h) where h is tree height.
-  - Worst case (skewed tree): h = n, so O(n).
-  - Result array is O(n) (output space, not counted separately in the call stack analysis).
+  - Worst case (skewed tree): h = n, so O(n). Best case (balanced tree): O(log n).
+  - Excluding output space, auxiliary space is O(h); total including output is O(n).
 
 ---
 
@@ -47,9 +47,9 @@ This document analyzes the time and space complexity of three solutions for the 
 
 | Solution                     | Time Complexity | Space Complexity | Notes                                              |
 | ---------------------------- | --------------- | ---------------- | -------------------------------------------------- |
-| Recursive DFS                | O(n)            | O(n)             | Simple and clean; stack overflow risk on very deep trees |
+| Recursive DFS                | O(n)            | O(h)             | Simple and clean; O(h) auxiliary stack, O(n) total with output; stack overflow risk on very deep trees |
 | Iterative (reverse preorder) | O(n)            | O(n)             | Simple iterative; stack can hold all nodes at once       |
-| Iterative (state tracking)   | O(n)            | O(n) / O(h) aux  | True iterative postorder; optimal auxiliary stack space  |
+| Iterative (state tracking)   | O(n)            | O(h)             | True iterative postorder; O(h) auxiliary stack, O(n) total with output |
 
 **Recommendation:**
 
