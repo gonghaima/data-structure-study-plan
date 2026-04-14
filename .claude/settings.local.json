@@ -3,7 +3,8 @@
     "allow": [
       "WebFetch(domain:leetcode.com)",
       "WebSearch",
-      "WebFetch(domain:github.com)"
+      "WebFetch(domain:github.com)",
+      "Bash(gh pr:*)"
     ]
   }
 }
