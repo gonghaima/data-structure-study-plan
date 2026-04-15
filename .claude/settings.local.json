@@ -4,7 +4,8 @@
       "WebFetch(domain:leetcode.com)",
       "WebSearch",
       "WebFetch(domain:github.com)",
-      "Bash(gh pr:*)"
+      "Bash(gh pr:*)",
+      "WebFetch(domain:algo.monster)"
     ]
   }
 }

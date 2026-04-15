@@ -1,4 +1,4 @@
-Follow the pattern for /Users/stevengong/study/data-structure-study-plan/week5/ValidateBinarySearchTree/question.md, create a new folder and question.md from this https://leetcode.com/problems/n-ary-tree-postorder-traversal/
+Follow the pattern for /Users/stevengong/study/data-structure-study-plan/week5/ValidateBinarySearchTree/question.md, create a new folder and question.md from this https://leetcode.com/problems/n-ary-tree-level-order-traversal/
 
 now create test data, and spec files, and one empty solution.js without implimentation.
 
