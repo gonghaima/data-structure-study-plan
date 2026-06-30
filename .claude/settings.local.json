@@ -5,7 +5,16 @@
       "WebSearch",
       "WebFetch(domain:github.com)",
       "Bash(gh pr:*)",
-      "WebFetch(domain:algo.monster)"
+      "WebFetch(domain:algo.monster)",
+      "Bash(git push:*)",
+      "Bash(git checkout:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(/usr/bin/git status *)",
+      "Bash(/usr/bin/git log *)",
+      "Bash(/usr/bin/git add *)",
+      "Bash(/usr/bin/git commit *)",
+      "Bash(/usr/bin/git push *)"
     ]
   }
 }

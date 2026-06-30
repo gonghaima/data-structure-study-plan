@@ -1,3 +1,5 @@
+Follow the pattern for /Users/stevengong/study/data-structure-study-plan/week5/ValidateBinarySearchTree/question.md, create a new folder and question.md for Diameter of Binary Tree** (LeetCode #543)
+
 Follow the pattern for /Users/stevengong/study/data-structure-study-plan/week5/ValidateBinarySearchTree/question.md, create a new folder and question.md from this https://leetcode.com/problems/n-ary-tree-level-order-traversal/
 
 now create test data, and spec files, and one empty solution.js without implimentation.
@@ -11,8 +13,7 @@ give me more common solutions, in solution1.js, solution2.js, etc for /Users/ste
 
 
 refer to similar format /Users/stevengong/study/data-structure-study-plan/week1/Shortest_Palindrome/complexity-analysis.md
-create a complexity-analysis.md in the folder /Users/stevengong/study/data-structure-study-plan/week5/NaryTreeLevelOrderTraversal
-
+create a complexity-analysis.md in the folder /Users/stevengong/study/data-structure-study-plan/week5/BalancedBinaryTree
 
 
 follow /Users/stevengong/study/data-structure-study-plan/week2/linked-lists-problems.md,
