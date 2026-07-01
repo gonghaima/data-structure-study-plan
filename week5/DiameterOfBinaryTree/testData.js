@@ -102,7 +102,7 @@ const testData = {
             expected: 2
         },
         {
-            description: 'Unbalanced tree where longer path is left-left to right',
+            description: 'Unbalanced tree where longest path goes through root: 3→2→1→4→5→6',
             input: new TreeNode(1,
                 new TreeNode(2,
                     new TreeNode(3)
@@ -115,7 +115,7 @@ const testData = {
                     )
                 )
             ),
-            expected: 4
+            expected: 5
         }
     ]
 };
