@@ -1,4 +1,4 @@
-const diameterOfBinaryTree = require('./solution');
+const diameterOfBinaryTree = require('./solution1');
 const testData = require('./testData');
 
 /**
