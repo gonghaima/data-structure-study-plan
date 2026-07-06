@@ -6,7 +6,7 @@ now create test data, and spec files, and one empty solution.js without implimen
 
 
 Follow pattern /Users/stevengong/study/data-structure-study-plan/week3/ConstrainedSubsequenceSum, and /Users/stevengong/study/data-structure-study-plan/week1/SETUP_TEMPLATE.md,
-Create test data, and spec files, and one empty solution.js in the folder /Users/stevengong/study/data-structure-study-plan/week5/ValidateBinarySearchTree/question.md
+Create test data, and spec files, and one empty solution.js in the folder /Users/stevengong/study/data-structure-study-plan/week5/SymmetricTree/question.md
 
 give me a few common solutions, in solution.js, solution1.js, etc
 give me more common solutions, in solution1.js, solution2.js, etc for /Users/stevengong/study/data-structure-study-plan/week5/NaryTreePostorderTraversal/question.md
