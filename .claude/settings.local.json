@@ -14,7 +14,12 @@
       "Bash(/usr/bin/git log *)",
       "Bash(/usr/bin/git add *)",
       "Bash(/usr/bin/git commit *)",
-      "Bash(/usr/bin/git push *)"
+      "Bash(/usr/bin/git push *)",
+      "Bash(npx jest *)",
+      "Bash(node -e ' *)",
+      "Bash(git -C /Users/stevengong/study/data-structure-study-plan add week5/SymmetricTree/)",
+      "Bash(git -C /Users/stevengong/study/data-structure-study-plan commit -m ' *)",
+      "Bash(git -C /Users/stevengong/study/data-structure-study-plan push origin master)"
     ]
   }
 }
