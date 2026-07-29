@@ -1,4 +1,4 @@
-const isSameTree = require('./solution');
+const isSameTree = require('./solution1');
 const testData = require('./testData');
 
 /**
