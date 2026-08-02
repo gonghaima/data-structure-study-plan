@@ -19,7 +19,8 @@
       "Bash(node -e ' *)",
       "Bash(git -C /Users/stevengong/study/data-structure-study-plan add week5/SymmetricTree/)",
       "Bash(git -C /Users/stevengong/study/data-structure-study-plan commit -m ' *)",
-      "Bash(git -C /Users/stevengong/study/data-structure-study-plan push origin master)"
+      "Bash(git -C /Users/stevengong/study/data-structure-study-plan push origin master)",
+      "Bash(node *)"
     ]
   }
 }
