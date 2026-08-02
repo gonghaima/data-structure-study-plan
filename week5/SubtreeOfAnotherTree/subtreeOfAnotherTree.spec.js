@@ -1,4 +1,4 @@
-const isSubtree = require('./solution');
+const isSubtree = require('./solution2');
 const testData = require('./testData');
 
 /**
