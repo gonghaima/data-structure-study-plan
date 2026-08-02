@@ -72,7 +72,7 @@ const testData = {
                 };
                 return createBalanced(1, 1000);
             })(),
-            subRoot: new TreeNode(1),
+            subRoot: new TreeNode(2),
             expected: true
         }
     ],

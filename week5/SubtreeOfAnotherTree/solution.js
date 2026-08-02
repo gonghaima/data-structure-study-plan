@@ -7,19 +7,25 @@ var isSubtree = function (root, subRoot) {
   // TODO: Implement your solution here
   const rtVals = [];
   const inOrderRtVals = (root) => {
-    if (!root) return;
-    if (root.left) inOrderRtVals(root.left);
-    if (root.right) inOrderRtVals(root.right);
-    rtVals.push(root.val);
+    if (!root) {
+      rtVals.push('#');
+      return;
+    }
+    inOrderRtVals(root.left);
+    inOrderRtVals(root.right);
+    rtVals.push('^' + root.val + '$');
   };
   inOrderRtVals(root);
 
   const sbrtVals = [];
   const inOrdersbrtVals = (root) => {
-    if (!root) return;
-    if (root.left) inOrdersbrtVals(root.left);
-    if (root.right) inOrdersbrtVals(root.right);
-    sbrtVals.push(root.val);
+    if (!root) {
+      sbrtVals.push('#');
+      return;
+    }
+    inOrdersbrtVals(root.left);
+    inOrdersbrtVals(root.right);
+    sbrtVals.push('^' + root.val + '$');
   };
   inOrdersbrtVals(subRoot);
 
