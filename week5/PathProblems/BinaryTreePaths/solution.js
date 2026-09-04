@@ -4,22 +4,26 @@
  */
 var binaryTreePaths = function (root) {
   // TODO: Implement your solution here
-  //   const allPath = [];
-  const allPath = new Set();
+  const allPath = [];
   function getPath(node, cPath) {
-    if (!node) {
-      //   allPath.push(cPath);
-      allPath.add(cPath);
-      return cPath;
+    if (!node) return;
+
+    // build the path for the current node
+    cPath = cPath ? cPath + '->' + node.val : String(node.val);
+
+    // leaf → record the path
+    if (!node.left && !node.right) {
+      allPath.push(cPath);
+      return;
     }
-    if (!cPath) cPath = node.val + '';
-    else cPath = cPath + '->' + node.val;
+
+    // otherwise continue
     getPath(node.left, cPath);
     getPath(node.right, cPath);
-    return cPath;
   }
-  getPath(root);
-  return Array.from(allPath);
+
+  getPath(root, '');
+  return allPath;
 };
 
 module.exports = binaryTreePaths;
