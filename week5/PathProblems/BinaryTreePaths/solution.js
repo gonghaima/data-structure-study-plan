@@ -3,27 +3,31 @@
  * @return {string[]}
  */
 var binaryTreePaths = function (root) {
-  // TODO: Implement your solution here
-  const allPath = [];
-  function getPath(node, cPath) {
-    if (!node) return;
+  const result = [];
+  const currentNodes = [];
+  if (root.left) currentNodes.push(root.left);
+  if (root.right) currentNodes.push(root.right);
 
-    // build the path for the current node
-    cPath = cPath ? cPath + '->' + node.val : String(node.val);
-
-    // leaf → record the path
-    if (!node.left && !node.right) {
-      allPath.push(cPath);
-      return;
+  const checkQueue = [{ [String(root.val)]: currentNodes }];
+  for (let i = 0; i < checkQueue.length; i++) {
+    const currentItem = checkQueue[i];
+    const key = Object.keys(currentItem)[0];
+    const val = currentItem[key];
+    if (val.length === 0) {
+      result.push(key);
+      continue;
     }
-
-    // otherwise continue
-    getPath(node.left, cPath);
-    getPath(node.right, cPath);
+    for (let j = 0; j < val.length; j++) {
+      const item = val[j];
+      const curKey = key + '->' + item.val;
+      const curVal = [];
+      if (item.left) curVal.push(item.left);
+      if (item.right) curVal.push(item.right);
+      checkQueue.push({ [curKey]: curVal });
+    }
   }
 
-  getPath(root, '');
-  return allPath;
+  return result;
 };
 
 module.exports = binaryTreePaths;
