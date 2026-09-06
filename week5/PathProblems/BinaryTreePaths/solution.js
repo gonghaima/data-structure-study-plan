@@ -4,29 +4,24 @@
  */
 var binaryTreePaths = function (root) {
   const result = [];
-  const currentNodes = [];
-  if (root.left) currentNodes.push(root.left);
-  if (root.right) currentNodes.push(root.right);
+  if (!root) return result;
 
-  const checkQueue = [{ [String(root.val)]: currentNodes }];
-  for (let i = 0; i < checkQueue.length; i++) {
-    const currentItem = checkQueue[i];
-    const key = Object.keys(currentItem)[0];
-    const val = currentItem[key];
-    if (val.length === 0) {
-      result.push(key);
-      continue;
+  const path = [];
+
+  function dfs(node) {
+    path.push(node.val);
+
+    if (!node.left && !node.right) {
+      result.push(path.join('->'));
+    } else {
+      if (node.left) dfs(node.left);
+      if (node.right) dfs(node.right);
     }
-    for (let j = 0; j < val.length; j++) {
-      const item = val[j];
-      const curKey = key + '->' + item.val;
-      const curVal = [];
-      if (item.left) curVal.push(item.left);
-      if (item.right) curVal.push(item.right);
-      checkQueue.push({ [curKey]: curVal });
-    }
+
+    path.pop();
   }
 
+  dfs(root);
   return result;
 };
 
