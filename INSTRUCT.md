@@ -1,4 +1,4 @@
-Follow the pattern for /Users/stevengong/study/data-structure-study-plan/week5/TreeProperties/BalancedBinaryTree/question.md, create a new folder and question.md for - Binary Tree Paths** (LeetCode #257)   in the folder /Users/stevengong/study/data-structure-study-plan/week5/PathProblems
+Follow the pattern for /Users/stevengong/study/data-structure-study-plan/week5/TreeProperties/BalancedBinaryTree/question.md, create a new folder and question.md for -**Path Sum** (LeetCode #112)  in the folder /Users/stevengong/study/data-structure-study-plan/week5/PathProblems
 
 Follow the pattern for /Users/stevengong/study/data-structure-study-plan/week5/ValidateBinarySearchTree/question.md, create a new folder and question.md from this https://leetcode.com/problems/n-ary-tree-level-order-traversal/
 
