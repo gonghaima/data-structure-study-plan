@@ -4,32 +4,15 @@
  * @return {boolean}
  */
 var hasPathSum = function (root, targetSum) {
-  // TODO: Implement your solution here
-  let found = false;
-  function find(node, sum) {
-    if (
-      (node?.val || node?.val === 0) &&
-      !node?.left &&
-      !node?.right &&
-      node.val === sum
-    ) {
-      found = true;
-      return;
-    } else if (node?.val && !node?.left && !node?.right && node.val !== sum) {
-      return;
-    }
+  if (!root) return false;
 
-    if (node?.left && !found) {
-      find(node.left, sum - node.val);
-    }
-    if (node?.right && !found) {
-      find(node.right, sum - node.val);
-    }
+  const remaining = targetSum - root.val;
 
-    return;
+  if (!root.left && !root.right) {
+    return remaining === 0;
   }
-  find(root, targetSum);
-  return found;
+
+  return hasPathSum(root.left, remaining) || hasPathSum(root.right, remaining);
 };
 
 module.exports = hasPathSum;
