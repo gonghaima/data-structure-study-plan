@@ -5,35 +5,21 @@
  */
 var hasPathSum = function (root, targetSum) {
   if (!root) return false;
-  if (!root.left && !root.right) return root.val === targetSum;
 
-  let found = false;
-  const nodeVals = [root.left, root.right].filter(Boolean);
-  let listNodes = [{ [root.val]: nodeVals }];
+  const queue = [[root, root.val]];
 
-  while (listNodes.length && !found) {
-    const currentNode = listNodes.shift();
-    const sumSoFar = Number(Object.keys(currentNode)[0]);
-    const childNodes = Object.values(currentNode)[0];
+  while (queue.length) {
+    const [node, sum] = queue.shift();
 
-    for (let i = 0; i < childNodes.length && !found; i++) {
-      const child = childNodes[i];
-      const childSum = sumSoFar + child.val;
-      const subNodes = [];
-      if (child.left) {
-        subNodes.push(child.left);
-      }
-      if (child.right) {
-        subNodes.push(child.right);
-      }
-      if (subNodes.length)
-        listNodes.push({ [childSum]: subNodes });
-      else
-        childSum === targetSum && (found = true);
+    if (!node.left && !node.right && sum === targetSum) {
+      return true;
     }
+
+    if (node.left) queue.push([node.left, sum + node.left.val]);
+    if (node.right) queue.push([node.right, sum + node.right.val]);
   }
 
-  return found;
+  return false;
 };
 
 module.exports = hasPathSum;

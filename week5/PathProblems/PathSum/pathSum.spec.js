@@ -1,4 +1,4 @@
-const hasPathSum = require('./solution');
+const hasPathSum = require('./solution-my-bfs-solution');
 const testData = require('./testData');
 
 // Helper function to build tree from array representation
