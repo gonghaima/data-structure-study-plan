@@ -1,4 +1,4 @@
-Follow the pattern for /Users/stevengong/study/data-structure-study-plan/week5/TreeProperties/BalancedBinaryTree/question.md, create a new folder and question.md for **Insert into a Binary Search Tree** (LeetCode #701)in the folder /Users/stevengong/study/data-structure-study-plan/week5/BinarySearchTree
+Follow the pattern for /Users/stevengong/study/data-structure-study-plan/week5/TreeProperties/BalancedBinaryTree/question.md, create a new folder and question.md for **Delete Node in a BST** (LeetCode #450) in the folder /Users/stevengong/study/data-structure-study-plan/week5/BinarySearchTree
 
 Follow the pattern for /Users/stevengong/study/data-structure-study-plan/week5/ValidateBinarySearchTree/question.md, create a new folder and question.md from this https://leetcode.com/problems/n-ary-tree-level-order-traversal/
 
