@@ -9,7 +9,26 @@
  * @return {number}
  */
 var kthSmallest = function (root, k) {
-  return null;
+  let count = k;
+  let result = null;
+
+  function inorder(node) {
+    if (!node || result !== null) return;
+
+    inorder(node.left);
+
+    if (result !== null) return;
+    count--;
+    if (count === 0) {
+      result = node.val;
+      return;
+    }
+
+    inorder(node.right);
+  }
+
+  inorder(root);
+  return result;
 };
 
 module.exports = kthSmallest;
